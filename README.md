@@ -1,3 +1,11 @@
+MEKA Industrias
+
+- This pages will show the best products and wastewater treatment.
+- This READ ME will let;
+  - record a setting to use throw this web page
+  - use as documentation for futures developers
+  -
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -42,5 +50,4 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 ## Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
 To learn React, check out the [React documentation](https://reactjs.org/).
