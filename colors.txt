@@ -2,14 +2,14 @@
 
 /* CSS HEX */
 --hunter-green: #336A4Cff;
---tea-green: #BFE1A3ff;
+--tea-green: #c4e2acff;
 --blue-ncs: #3C89B8ff;
 --yellow-green: #98CC4Bff;
 --pacific-cyan: #48ACCDff;
 
 /* CSS HSL */
 --hunter-green: hsla(147, 35%, 31%, 1);
---tea-green: hsla(93, 51%, 76%, 1);
+--tea-green: hsla(94, 45%, 82%, 1.00);
 --blue-ncs: hsla(203, 51%, 48%, 1);
 --yellow-green: hsla(84, 56%, 55%, 1);
 --pacific-cyan: hsla(195, 57%, 54%, 1);
