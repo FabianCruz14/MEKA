@@ -1,14 +1,17 @@
 import React from 'react';
 import './App.css';
-import Header from './pages/Header';
-import Footer from './pages/Footer';
-
+import Header from './components/Header';
+import Footer from './components/Footer';
+import Main from './components/Main';
+import CarouselMain from './components/CarrouselMain';
 
 function App() {
   return (
     <div className="App">
-      <Header></Header>
-      <Footer></Footer>
+      <Header/>
+      <CarouselMain/>
+      
+      <Footer/>
     </div>
   );
 }
