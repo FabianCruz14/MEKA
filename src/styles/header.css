@@ -1,0 +1,28 @@
+/* first, we align and create a responsive header, when we have a mobile size,
+we show a hamburger menu with 3 options, and when we have a desktop size, show 3 options
+ */
+@import './variables.css';
+
+.header {
+   width: 100%;
+   height: 7rem;
+   background-color: var(--greenTea);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 80%;
+    max-width: 120rem;
+    min-width: 7.6rem;
+    margin: 0 auto;
+}
+
+a {
+    font-size: 1.3rem;
+    color: var(--primary);
+    text-decoration: none;
+    align-content: center;
+}

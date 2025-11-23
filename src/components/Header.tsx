@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../styles/globales.css'
+import '../styles/header.css'
 import logo from "../assets/img/mekaInc.png"
 
 function Header () {
