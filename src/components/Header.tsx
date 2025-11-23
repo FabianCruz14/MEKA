@@ -1,5 +1,6 @@
 import { useState } from "react";
 import '../styles/header.css'
+import '../styles/globales.css'
 import logo from "../assets/img/mekaInc.png"
 import nosotros from "../nosotros/Nosotros"
 
@@ -10,25 +11,14 @@ function Header () {
 
     return (
         <header className="header">
-            <div className="container header-content">
-                <div className="logo">
-                    <a href={logo} className="logo">{logo}</a>
-                    {/* <img src={logo} alt="logo MEKA" className="logo"/>
-                     */}
-                </div>
-                <nav className={`nav-main ${menuOpen ? 'open' : ''}`}>
-                    <a href= "#">Nosotros</a>
-                    <a href="#">Productos</a>
-                    <a href="#">Contacto</a>
-                </nav>
+            <div className=" header-content">
+                <img src={logo} alt="logo Meka" className="logo" />
 
-                <button 
-                    className="menu-toggle"
-                    onClick={()=> setMenuOpen(!menuOpen)}
-                    aria-label="Abrir Menu"
-                >
-                        ☰
-                </button>
+                <nav className="nav-main">
+                    <a href="#" className="a-nosotros">Nosotros</a>
+                    <a href="#" className="a-nosotros">Productos</a>
+                    <a href="#" className="a-nosotros">Contacto</a>
+                </nav>
             </div>
         </header>
     );

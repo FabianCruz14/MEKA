@@ -1,7 +1,10 @@
 @import './variables.css';
 
-
-
+.container {
+    width: 95%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
 
 .logo {
     height: 6.5rem;
