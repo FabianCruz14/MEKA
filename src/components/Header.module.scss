@@ -1,0 +1,60 @@
+@use '../styles/variables' as v;
+@use '../styles/mixins' as m;
+
+.header{
+    background-color: v.$greenTea;
+    
+    .headerContent {
+        padding: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 200rem;
+        min-width: 7.6rem;
+        margin: 0 auto;
+    }
+
+}
+
+.logo {
+    height: 9.5rem;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+.logoMarca{
+    display: flex;
+}
+.marca {
+    align-items: center;
+    h1 {
+        text-align: center;
+        color: v.$primary
+    }
+}
+
+.navMain{
+    display: flex;
+    gap: 4rem;
+    // width: 55rem;
+    // height: 5rem;
+    // justify-content: space-between; 
+    // text-align: center;
+    
+    a {
+        color: v.$primary;
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-decoration: none;
+        align-content: center;
+
+        &:hover{
+            font-weight: 100;
+            font-size: 3rem;
+        }
+    }
+}
+
+.marca{
+    align-items: center;
+}

@@ -1,0 +1,15 @@
+@use 'variables' as v;
+
+// RESPONSIVE MIXINS
+@mixin mobile {
+    @media (min-width: v.$mobile) {
+        @content;        
+    }
+    
+}
+
+@mixin grid ($colums, $space) {
+    display: grid;
+    grid-template-columns: repeat($colums, 1fr);
+    gap: $space;
+}

@@ -1,31 +1,6 @@
-@import './variables.css';
 
-.container {
-    width: 95%;
-    max-width: 120rem;
-    margin: 0 auto;
-}
 
-.logo {
-    height: 6.5rem;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-}
 
-h1 {
-    color: #48ACCDff;
-    margin: .5rem;
-    font-size: 4rem;
-}
-
-.nav-main{
-    display: flex;
-    width: 30rem;
-    height: 5rem;
-    justify-content: inherit; 
-    text-align: center;
-}
 
 
 .menu-toggle {
