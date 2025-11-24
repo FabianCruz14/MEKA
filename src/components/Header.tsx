@@ -12,12 +12,13 @@ function Header () {
 
     return (
         <header className={styles.header}>
+            {/* <div className='container'> */}
             <div className={`${styles.headerContent} container`}>
                 <div className={styles.logoMarca}>
                     <a href="/"> 
                         <img src={logo} alt="Logo Meka Ind" className={styles.logo} />
+                        <span>Meka</span>
                     </a>
-                    <h1 className={styles.marca}>Meka</h1>
                 </div>
 
 
@@ -26,6 +27,24 @@ function Header () {
                         <a href="#" className={styles.a}>Productos</a>
                         <a href="#" className={styles.a}>Contacto</a>
                 </nav>
+                {/* BOTÓN HAMBURGUESA (solo móvil) */}
+                <button
+                className={styles.hamburger}
+                onClick={() => setMenuOpen(!menuOpen)}
+                >
+                ☰
+                </button>
+
+                {/* MENU MOVIL */}
+                <div className={`${styles.mobileMenu} ${menuOpen ? styles.menuMobileOpen : ''}`}>
+                    <a href="#inicio" onClick={()=> setMenuOpen(false)}> Inicio</a>
+                    <a href="#Productos" onClick={()=> setMenuOpen(false)}> Productos</a>
+                    <a href="#contacto" onClick={()=> setMenuOpen(false)}> Contacto</a>
+
+                </div>
+
+
+
             </div>
         </header>
     )

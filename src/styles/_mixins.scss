@@ -2,10 +2,16 @@
 
 // RESPONSIVE MIXINS
 @mixin mobile {
-    @media (min-width: v.$mobile) {
-        @content;        
+    @media (max-width: v.$mobile) {
+        @content;     
     }
     
+}
+
+@mixin container {
+    width: 90%;
+    max-width: 180rem;
+    margin: 0 auto;
 }
 
 @mixin grid ($colums, $space) {

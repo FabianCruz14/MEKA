@@ -1,17 +1,29 @@
 @use '../styles/variables' as v;
 @use '../styles/mixins' as m;
+@use '../styles/main.scss';
+
 
 .header{
     background-color: v.$greenTea;
-    
+    width: 100%;
+
+    @include m.mobile{
+        .navMain {
+            display: none;
+        }
+
+        .hamburger{
+            display: block;
+        }
+    }
+
     .headerContent {
         padding: 2rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 200rem;
-        min-width: 7.6rem;
         margin: 0 auto;
+        width: 90%;
     }
 
 }
@@ -22,8 +34,26 @@
     display: flex;
     flex-direction: row;
 }
-.logoMarca{
+.logoMarca {
     display: flex;
+    align-items: center;
+    
+    a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 1rem;
+    }
+    
+    span {
+        color: v.$primary;
+        font-size: 6rem;
+        font-weight: 600;
+        
+        @include m.mobile {
+            font-size: 4rem;
+        }
+    }
 }
 .marca {
     align-items: center;
@@ -32,15 +62,25 @@
         color: v.$primary
     }
 }
+/* MENU MÓVIL DESLIZANTE */
+.mobileMenu {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  width: 100%;
+  background-color: v.$greenTea;
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  transform: translateY(-120%);
+  transition: transform 0.3s ease-in-out;
+}
 
 .navMain{
     display: flex;
     gap: 4rem;
-    // width: 55rem;
-    // height: 5rem;
-    // justify-content: space-between; 
-    // text-align: center;
-    
+
     a {
         color: v.$primary;
         font-size: 2.5rem;
@@ -53,8 +93,73 @@
             font-size: 3rem;
         }
     }
+
+    @include m.mobile{
+        display: none;
+    }
 }
 
 .marca{
     align-items: center;
 }
+
+.hamburger{
+    display:none;
+    background: none;
+    border: none;
+    color: v.$primary;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+/* MENU MÓVIL */
+.mobileMenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: v.$greenTea;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 1000;
+    
+    a {
+        color: v.$primary;
+        font-size: 2rem;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border-bottom: 1px solid rgba(v.$primary, 0.1);
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: rgba(v.$primary, 0.1);
+            padding-left: 3rem;
+        }
+    }
+}
+
+.mobileMenuOpen {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    color: v.$primary;
+    cursor: pointer;
+    font-size: 3rem;
+    padding: 0.5rem;
+    
+    @include m.mobile {
+        display: block;
+    }
+}
+
