@@ -29,8 +29,8 @@ function Header () {
                 </nav>
                 {/* BOTÓN HAMBURGUESA (solo móvil) */}
                 <button
-                className={styles.hamburger}
-                onClick={() => setMenuOpen(!menuOpen)}
+                    className={styles.hamburger}
+                    onClick={() => setMenuOpen(!menuOpen)}
                 >
                 ☰
                 </button>

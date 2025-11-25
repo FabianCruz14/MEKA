@@ -8,6 +8,8 @@
     width: 100%;
 
     @include m.mobile{
+        
+        // we hide a navMain and active burger in a mobile
         .navMain {
             display: none;
         }
@@ -18,12 +20,14 @@
     }
 
     .headerContent {
-        padding: 2rem;
+        padding: 1.5rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 0 auto;
-        width: 90%;
+
+        @include m.container;
+
+        
     }
 
 }
@@ -31,8 +35,10 @@
 .logo {
     height: 9.5rem;
     width: auto;
-    display: flex;
-    flex-direction: row;
+
+    @include m.mobile{
+        height: 6rem;
+    }
 }
 .logoMarca {
     display: flex;
@@ -62,20 +68,6 @@
         color: v.$primary
     }
 }
-/* MENU MÓVIL DESLIZANTE */
-.mobileMenu {
-  position: absolute;
-  top: 8rem;
-  left: 0;
-  width: 100%;
-  background-color: v.$greenTea;
-  display: none;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-  transform: translateY(-120%);
-  transition: transform 0.3s ease-in-out;
-}
 
 .navMain{
     display: flex;
@@ -87,10 +79,15 @@
         font-weight: 600;
         text-decoration: none;
         align-content: center;
-
+        
         &:hover{
             font-weight: 100;
             font-size: 3rem;
+        }
+    }
+    @include m.tablet{
+        a {
+            font-size: 2rem;
         }
     }
 
@@ -112,8 +109,23 @@
     font-size: 3rem;
 }
 
-/* MENU MÓVIL */
+/* MENU MÓVIL DESLIZANTE */
 .mobileMenu {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  width: 100%;
+  background-color: v.$greenTea;
+  display: none;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  transform: translateY(-120%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* MENU MÓVIL */
+.mobileMenuOpen {
     position: absolute;
     top: 100%;
     left: 0;
