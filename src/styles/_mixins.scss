@@ -8,11 +8,21 @@
 }
 
 @mixin tablet {
-    @media (max-width: v.$tablet) {
+    @media (min-width: v.$tablet) {
         @content;        
     }
 }
 
+@mixin desktop {
+    @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+@mixin desktopXL{
+    @media (min-width: v.$desktopXL) {
+        @content;
+    }
+}
 @mixin container {
     width: 90%;
     max-width: 180rem;

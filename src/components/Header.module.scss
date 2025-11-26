@@ -2,33 +2,24 @@
 @use '../styles/mixins' as m;
 @use '../styles/main.scss';
 
-
+// in th header, we add a logo, brand name, and 3 links to other pages
 .header{
     background-color: v.$greenTea;
     width: 100%;
+    position: relative;    
+}
 
+// header content a logoMarca and span
+.headerContent {
+    padding: 1.5rem;
+
+    @include m.container;
+    display: flex;
     @include m.mobile{
-        
-        // we hide a navMain and active burger in a mobile
-        .navMain {
-            display: none;
-        }
-
-        .hamburger{
-            display: block;
-        }
+        flex-direction: column;
     }
-
-    .headerContent {
-        padding: 1.5rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        @include m.container;
-
-        
-    }
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -46,7 +37,7 @@
     
     a {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         text-decoration: none;
         gap: 1rem;
     }
@@ -61,16 +52,10 @@
         }
     }
 }
-.marca {
-    align-items: center;
-    h1 {
-        text-align: center;
-        color: v.$primary
-    }
-}
-
+// navMain its a container who contain all links to pages
 .navMain{
     display: flex;
+    align-items: center;
     gap: 4rem;
 
     a {
@@ -85,7 +70,13 @@
             font-size: 3rem;
         }
     }
+
     @include m.tablet{
+        flex-direction: row;
+        
+    }
+
+    @include m.desktop{
         a {
             font-size: 2rem;
         }
@@ -96,72 +87,8 @@
     }
 }
 
-.marca{
-    align-items: center;
-}
 
-.hamburger{
-    display:none;
-    background: none;
-    border: none;
-    color: v.$primary;
-    cursor: pointer;
-    font-size: 3rem;
-}
-
-/* MENU MÓVIL DESLIZANTE */
-.mobileMenu {
-  position: absolute;
-  top: 8rem;
-  left: 0;
-  width: 100%;
-  background-color: v.$greenTea;
-  display: none;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 2rem;
-  transform: translateY(-120%);
-  transition: transform 0.3s ease-in-out;
-}
-
-/* MENU MÓVIL */
-.mobileMenuOpen {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: v.$greenTea;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
-    transform: translateY(-100%);
-    opacity: 0;
-    transition: all 0.3s ease-in-out;
-    z-index: 1000;
-    
-    a {
-        color: v.$primary;
-        font-size: 2rem;
-        font-weight: 600;
-        text-decoration: none;
-        padding: 1rem 2rem;
-        border-bottom: 1px solid rgba(v.$primary, 0.1);
-        transition: all 0.3s ease;
-
-        &:hover {
-            background-color: rgba(v.$primary, 0.1);
-            padding-left: 3rem;
-        }
-    }
-}
-
-.mobileMenuOpen {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.hamburger {
+.burger {
     display: none;
     background: none;
     border: none;
@@ -173,5 +100,99 @@
     @include m.mobile {
         display: block;
     }
+
 }
+.logoBurger{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.active {
+    a {
+        flex-direction: column;
+    }
+
+}
+
+.menuMobile{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    margin-top: 1rem;
+    a {
+        color: v.$primary;
+        font-size: 2rem;
+        font-weight: 600;
+        text-decoration: none;
+        align-content: center;
+        
+        &:hover{
+            font-weight: 100;
+            font-size: 3rem;
+        }
+    }
+
+    @include m.tablet{
+        display: none;
+    }
+    @include m.desktop{
+        display: none;
+    }
+    @include m.desktopXL{
+        display: none;
+    }
+}
+
+/* MENU MÓVIL DESLIZANTE */
+// .mobileMenu {
+//   position: absolute;
+//   top: 100%;
+//   left: 0;
+//   width: 100%;
+//   background-color: v.$greenTea;
+//   display: flex;
+//   flex-direction: column;
+//   gap: 2rem;
+//   padding: 2rem;
+//   transform: translateY(-120%);
+//   transition: transform 0.3s ease-in-out;
+// }
+
+/* MENU MÓVIL */
+// .mobileMenu {
+//     @include m.mobile{
+//         display: flex;
+//         position: absolute;
+//         margin-top: 2rem;
+//         left: 0;
+//         width: 100%;
+//         background-color: v.$greenTea;
+//         flex-direction: column;
+//         gap: 2rem;
+//         padding: 2rem;
+//         transform: translateY(-100%);
+//         opacity: 0;
+//         transition: all 0.3s ease-in-out;
+//         z-index: 1000;
+        
+//         a {
+//             color: v.$primary;
+//             font-size: 2rem;
+//             font-weight: 600;
+//             text-decoration: none;
+//             padding: 1rem 2rem;
+//             border-bottom: 1px solid rgba(v.$primary, 0.1);
+//             transition: all 0.3s ease;
+    
+//             &:hover {
+//                 background-color: rgba(v.$primary, 0.1);
+//                 padding-left: 3rem;
+//             }
+//         }
+
+//     }
+// }
+
 
