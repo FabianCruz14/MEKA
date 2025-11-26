@@ -60,27 +60,30 @@
 
     a {
         color: v.$primary;
-        font-size: 2.5rem;
+        font-size: 3rem;
         font-weight: 600;
         text-decoration: none;
         align-content: center;
         
         &:hover{
             font-weight: 100;
-            font-size: 3rem;
+            font-size: 2.6rem;
         }
     }
 
     @include m.tablet{
         flex-direction: row;
+        a {
+            font-size: 2.3rem;
+
+            &:hover{
+                font-size: 2.2rem;
+            }
+        }
         
     }
 
-    @include m.desktop{
-        a {
-            font-size: 2rem;
-        }
-    }
+    
 
     @include m.mobile{
         display: none;
@@ -109,13 +112,6 @@
     width: 100%;
 }
 
-.active {
-    a {
-        flex-direction: column;
-    }
-
-}
-
 .menuMobile{
     display: flex;
     flex-direction: column;
@@ -130,7 +126,7 @@
         
         &:hover{
             font-weight: 100;
-            font-size: 3rem;
+            font-size: 2.3rem;
         }
     }
 
@@ -145,54 +141,18 @@
     }
 }
 
-/* MENU MÓVIL DESLIZANTE */
-// .mobileMenu {
-//   position: absolute;
-//   top: 100%;
-//   left: 0;
-//   width: 100%;
-//   background-color: v.$greenTea;
-//   display: flex;
-//   flex-direction: column;
-//   gap: 2rem;
-//   padding: 2rem;
-//   transform: translateY(-120%);
-//   transition: transform 0.3s ease-in-out;
-// }
+.menuMobile.active {
+    @include m.mobile {
+        display: flex;
+        max-height: 300px;
+        opacity: 1;
+        transform: translateY(0);
+        padding: 1rem 0;
+    }
+}
 
-/* MENU MÓVIL */
-// .mobileMenu {
-//     @include m.mobile{
-//         display: flex;
-//         position: absolute;
-//         margin-top: 2rem;
-//         left: 0;
-//         width: 100%;
-//         background-color: v.$greenTea;
-//         flex-direction: column;
-//         gap: 2rem;
-//         padding: 2rem;
-//         transform: translateY(-100%);
-//         opacity: 0;
-//         transition: all 0.3s ease-in-out;
-//         z-index: 1000;
-        
-//         a {
-//             color: v.$primary;
-//             font-size: 2rem;
-//             font-weight: 600;
-//             text-decoration: none;
-//             padding: 1rem 2rem;
-//             border-bottom: 1px solid rgba(v.$primary, 0.1);
-//             transition: all 0.3s ease;
-    
-//             &:hover {
-//                 background-color: rgba(v.$primary, 0.1);
-//                 padding-left: 3rem;
-//             }
-//         }
-
-//     }
-// }
-
-
+.menuMobile.hidden {
+    @include m.mobile {
+        display: none;
+    }
+}
