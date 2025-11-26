@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styles from './Header.module.scss'
 import '../styles/main.scss'
-import logo from "../assets/img/mekaInc.png"
+import logo from "../assets/webp/mekaInc.webp"
 
 
 
