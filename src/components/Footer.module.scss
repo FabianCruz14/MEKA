@@ -12,50 +12,49 @@
     h3{
         margin-top: 0;
         color: v.$primary;
-        font-size: 2rem;
+        font-size: 1rem;
         
     }
     
     // aplicamos el mixin para los estilos responsives del footer
-    @include m.mobile {
-        padding: 1rem;
-        height: auto;
-        flex-direction: row;
+    // @include m.mobile {
+    //     padding: 1rem;
+    //     height: auto;
+    //     flex-direction: column;
 
-        h3{
-            font-size: 1.3rem;
-        }
-    }
+    //     h3{
+    //         font-size: 1.3rem;
+    //     }
+    // }
 }
 .footerContent {
     display: flex;
     height: auto;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
     @include m.container;
 }
 .navFooter {
     display: flex;
-    gap: 3rem;
-    align-items: center;
-    a {
-        margin-left: 1rem;
-        font-size: 1.8rem;
+    flex-direction: column;
+    gap: 0;
+    margin-left: 1rem;
+    
+    a{
+        font-size: 1.4rem;
         color: v.$primary;
-        
-        &:hover{
-            color: v.$primary;
+
+        &:hover {
+            color: rgb(4, 77, 22);
         }
     }
 
-    @include m.mobile{
-        flex-direction: column;
-        gap: 0;
-        a {
-            font-size: 1.5rem;
-        }
+    @include m.tablet {
+        flex-direction: row;
+        gap: 3rem;
     }
 }
 .logo {
-    height: 5rem;
+    height: 6rem;
 }
