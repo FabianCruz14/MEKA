@@ -2,7 +2,7 @@
 
 // RESPONSIVE MIXINS
 @mixin mobile {
-    @media (min-width: v.$mobile) {
+    @media (max-width: v.$mobile) {
         @content;     
     }
 }
