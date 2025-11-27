@@ -11,19 +11,19 @@
     background-repeat: no-repeat;
     background-position: 20%;
 
-    // @include m.mobile{
-    //     height: 30rem;
-    // }
+    @include m.tablet{
+        height: 35rem;
+    }
+    @include m.desktop{
+        height: 50rem;
+    }
     .overlay{
         position: absolute;
-        background: linear-gradient(
-            270deg,
-            rgba( v.$secondary, 40%)
-        );
-        height: 30rem;
+        background-color: rgba(v.$greenTea, 25%);
+        height: 100%;
         // background-color: red;
         inset: 0;
-        z-index: 2;
+        // z-index: 2;
         display: flex;
         align-items: center;
         // align-content: flex-start;
@@ -41,16 +41,36 @@
     align-content: flex-start;
     justify-content: space-around;
     margin-left: 4rem;
-    margin-top: 2rem;
-    background-color: rgba( v.$cyan, 70%);
-
+    margin-top: 6rem;
+    background-color: rgba( v.$cyan, 95%);
     width: 19rem;
     // @include m.mobile{
     //     height: 10rem;
     // }
     text-align: left;
+    @include m.tablet{
+        margin-top: 10rem;
+        margin-left: 6rem;
+        width: 27.5rem;
+    }
+    
+    @include m.desktop {
+        width: 40rem;
+        margin-left: 15rem;
+    }
+
     h1 {
-        font-size: 3rem;
+        @include m.mobile{
+    
+            font-size: 2.7rem;
+        }
+        @include m.tablet{
+            font-size: 5rem;
+        }
+        @include m.desktop{
+            font-size: 8rem;
+        }
+
         // background-color:rgba( v.$secondary, 40%);
         color: v.$light;
         margin: 0;
@@ -59,19 +79,36 @@
         // @include m.borderText(.1rem);
     }
     h3{
+        @include m.mobile{
+
+            font-size: 1.4rem;
+        }
+        @include m.tablet{
+            font-size: 2rem;
+        }
+        @include m.desktop{
+            font-size: 3rem;
+        }
         margin: 0;
         padding: 0;
         border: none;
-        font-size: 1.5rem;
         color: v.$light;
         // @include m.borderText(.2rem);
 
     }
     span {
+        @include m.mobile{
+            font-size: 1rem;
+        }
+        @include m.tablet{
+            font-size: 1.5rem;
+        }
+        @include m.desktop{
+            font-size: 2rem;
+        }
         // width: 20rem;
         color: v.$light;
         letter-spacing: .3rem;
-        font-size: 1rem;
         font-weight: 600;
         align-items: center;
     }
