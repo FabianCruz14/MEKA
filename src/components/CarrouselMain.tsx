@@ -7,26 +7,18 @@ import img2 from '../assets/webp/2.webp';
 import img3 from '../assets/webp/4.webp';
 
 
-const contentStyle : React.CSSProperties = {
-    margin : 0,
-    width :  'auto',
-    height : '200rem',
-    textAlign : 'center',
-    background: 'red',
-}
-
 const CarouselMain : React.FC = () => (
-    <Carousel autoplay>
-        <div style={contentStyle}>
-            <img src={img1} alt="imagen 1" className={styles.carouselPics} />
+    <Carousel className={styles.carouselPics} autoplay>
+        <div className={styles.carouselContainer}>
+            <img src={img1} alt="imagen 1" className={styles.carouselPic} />
         </div>
 
-        <div style={contentStyle}>
-            <img src={img2} alt="imagen 2"  className={styles.carouselPics} />
+        <div className={styles.carouselPics}>
+            <img src={img2} alt="imagen 2"  className={styles.carouselPic} />
         </div>
 
-        <div style={contentStyle}>
-            <img src={img3} alt="imagen 2" className={styles.carouselPics} />
+        <div className={styles.carouselPics}>
+            <img src={img3} alt="imagen 2" className={styles.carouselPic} />
         </div>
 
 

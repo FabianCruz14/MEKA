@@ -29,6 +29,22 @@
     margin: 0 auto;
 }
 
+@mixin borderText ($grosor: 2px) {
+    // Propiedades para compatibilidad del contorno
+    -webkit-text-stroke: $grosor white;
+    text-stroke: $grosor white;
+    
+    // Elimina fondos no deseados
+    background: none;
+    
+    // Opcional: elimina sombras que puedan interferir
+    text-shadow: none;
+    
+    // Asegura que herede correctamente
+    border: none;
+    outline: none;
+}
+
 @mixin grid ($colums, $space) {
     display: grid;
     grid-template-columns: repeat($colums, 1fr);

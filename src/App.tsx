@@ -2,18 +2,15 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import CarouselMain from './components/CarrouselMain';
+import Main from './components/Main';
 import './styles/main.scss';
+import styles from '../src/App.module.scss';
 
 function App() {
   return (
     <div className="App">
       <Header/>
-      <div className="container">
-        
-        <CarouselMain/>
-
-      </div>
+      <Main/>
       
       <Footer/>
     </div>

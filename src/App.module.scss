@@ -1,0 +1,14 @@
+@use './styles/variables' as v;
+@use './styles/mixins' as m;
+
+
+.main {
+    position: relative;
+    h1 {
+        color : v.$primary;
+    }
+    span {
+        color: v.$primary
+    }
+}
+

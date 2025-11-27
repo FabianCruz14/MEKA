@@ -4,7 +4,7 @@
 
 // in th header, we add a logo, brand name, and 3 links to other pages
 .header{
-    background-color: v.$greenTea;
+    background-color: v.$secondary;
     width: 100%;
     position: relative;    
 }
@@ -45,7 +45,8 @@
     span {
         color: v.$primary;
         font-size: 6rem;
-        font-weight: 600;
+        font-weight: 800;
+        letter-spacing: -.6rem;
         
         @include m.mobile {
             font-size: 4rem;

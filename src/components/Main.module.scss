@@ -1,0 +1,54 @@
+@use '../styles/variables' as v;
+@use '../styles/mixins' as m;
+
+
+.main {
+    height: 70rem;
+    position: relative;
+    @include m.container;
+    .overlay{
+        position: absolute;
+        //background-color: red;
+        background: linear-gradient(
+            270deg,
+            rgba( v.$secondary, 40%)
+        );
+        inset: 0;
+        z-index: 2;
+        display: flex;
+        align-items: center;
+
+    }
+    
+}
+
+.mainContent{
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    h1 {
+        font-size: 8rem;
+        margin-left: 0;
+        color: v.$primary;
+        margin-bottom: 0;
+        letter-spacing: .1rem;
+        font-family: v.$fontSecondary;
+        @include m.borderText(.01rem);
+    }
+    h3{
+        margin: 0;
+        padding: 0;
+        border: none;
+        font-size: 5rem;
+        color: v.$primary;
+        @include m.borderText(.1rem);
+
+    }
+    span {
+        width: 20rem;
+        background-color: v.$secondary;
+        color: v.$primary;
+        letter-spacing: 1rem;
+    }
+
+}

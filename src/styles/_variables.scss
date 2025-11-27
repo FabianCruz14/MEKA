@@ -1,11 +1,13 @@
 // Colores Meka Inc
 $primary: #336A4Cff;
+$secondary : #c4e2acff;
 $greenTea: #c4e2acff;
 $yellowGreen: #98CC4Bff;
 $lightGreen: #a0ffcb6e;
 $blue: #3C89B8ff;
 $cyan: #48ACCDff;
 $dark : #1c2b1500;
+$light : #f2ffeb;
 
 // breakpoints
 $mobile: 480px;
@@ -17,5 +19,9 @@ $desktopXL: 1200px;
 // fuente
 @import url('https://fonts.googleapis.com/css2?family=Kedebideri:wght@400;500;600;700;800;900&display=swap');
 $font : "Kedebideri", sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+$fontSecondary : "Anton", sans-serif;
+
 
 
