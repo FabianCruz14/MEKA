@@ -8,7 +8,6 @@ function Main (){
         <div className={styles.main}>
             
             <div className={styles.overlay}>
-
                 <div className={styles.mainContent}>
                     <h1>Meka Ind</h1>
                     <h3>Soluciones para el tratamiento del agua</h3>
