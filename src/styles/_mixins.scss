@@ -31,8 +31,8 @@
 
 @mixin borderText ($grosor: 2px) {
     // Propiedades para compatibilidad del contorno
-    -webkit-text-stroke: $grosor white;
-    text-stroke: $grosor white;
+    -webkit-text-stroke: $grosor v.$primary;
+    text-stroke: $grosor v.$primary;
     
     // Elimina fondos no deseados
     background: none;

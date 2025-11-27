@@ -3,8 +3,6 @@ import styles from './Header.module.scss'
 import '../styles/main.scss'
 import logo from "../assets/webp/mekaInc.webp"
 
-
-
 function Header () {
         // adding a useState to handler the hamburger nav
     const [menuOpen, setMenuOpen] = useState(false);
