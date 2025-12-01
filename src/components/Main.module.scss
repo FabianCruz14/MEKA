@@ -1,16 +1,27 @@
 @use '../styles/variables' as v;
 @use '../styles/mixins' as m;
 
-p {
+.main{
+    display: block;
+}
+h4 {
     color: v.$blue;
-    background-color: v.$primary;
+    text-align: center
 }
 .nosotros {
     @include m.container;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-between;
     height: 22rem;
+    @include m.tablet{
+        height: 38rem;
+        // width: auto;
+
+    }
+    @include m.desktop{
+        height: 74rem;
+    }
 
     
     p{
@@ -20,9 +31,53 @@ p {
 
     }
 }
+.nosotrosContainer{
+    display: flex;
+}
 
 .description{
     // height: 2rem;
+    font-size: 4rem;
     width: 18rem;
     text-align: right;
+    @include m.tablet{
+        p{
+        }
+    }
+}
+.descriptions{
+    display: flex;
+    text-align: right;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+    p{
+        color: v.$blue;
+        font-size: 1.35rem;
+    }
+}
+ 
+.description2 {
+    @include m.mobile{
+        display: none;
+    }
+    @include m.tablet{
+        display: none;
+        p{
+            font-size: 3rem;
+        }
+    }
+    p {
+        color: v.$primary;
+    }
+}
+
+.extend {
+    @include m.mobile {
+        display: block;
+    }
+    @include m.tablet{
+        display: block;
+    }
+    color: v.$primary;
 }
