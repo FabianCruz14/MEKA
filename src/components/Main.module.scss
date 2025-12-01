@@ -19,7 +19,7 @@ h4 {
     display: block;
     align-items: center;
     justify-content: space-between;
-    height: 22rem;
+    height: auto;
     @include m.tablet{
         height: 38rem;
         // width: auto;
@@ -33,69 +33,38 @@ h4 {
     p{
         color: v.$primary;
         font-weight: 600;
+        text-align: justify;
         font-size: 1.2rem;
         @include m.tablet{
             font-size: 2rem;
         }
     }
 }
-.nosotrosContainer{
-    display: flex;
-}
 
-.description{
-    // height: 2rem;
-    width: 18rem;
-    text-align: right;
-    font-size: 4rem;
-    @include m.tablet{
-        p{
-        }
-    }
-}
-.descriptions{
+.carouselDesc{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    // text-align: justify;
-    text-align: right;
-    p{
-        padding: 1rem;
-        color: v.$blue;
-        font-size: 1.4rem;
-        width: 18rem;
-        height: auto;
-    }
-    @include m.tablet{
-       
-        p{
-            width: 53rem;
-            font-size: 3rem;
-        }
-    }
 }
- 
-.description2 {
-    @include m.mobile{
-        display: none;
-    }
-    @include m.tablet{
-        display: none;
-        p{
-            font-size: 3rem;
-        }
-    }
-    p {
-        color: v.$primary;
-    }
+.description{
+    width: 50%;
+    height: 20rem;
 }
-
-.extend {
+.show {
     @include m.mobile {
-        display: block;
+        display: none;
     }
     @include m.tablet{
         display: block;
     }
     color: v.$primary;
+}
+
+.extend {
+    @include m.mobile{
+        display: block;
+    }
+
+    @include m.tablet{
+        display: none;
+    }
 }
