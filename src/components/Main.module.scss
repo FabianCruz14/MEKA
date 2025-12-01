@@ -5,8 +5,14 @@
     display: block;
 }
 h4 {
+    font-size: 1rem;
     color: v.$blue;
     text-align: center
+}
+@include m.tablet{
+    h4 {
+        font-size: 2rem;
+    }
 }
 .nosotros {
     @include m.container;
@@ -28,7 +34,9 @@ h4 {
         color: v.$primary;
         font-weight: 600;
         font-size: 1.2rem;
-
+        @include m.tablet{
+            font-size: 2rem;
+        }
     }
 }
 .nosotrosContainer{
@@ -37,9 +45,9 @@ h4 {
 
 .description{
     // height: 2rem;
-    font-size: 4rem;
     width: 18rem;
     text-align: right;
+    font-size: 4rem;
     @include m.tablet{
         p{
         }
@@ -47,13 +55,23 @@ h4 {
 }
 .descriptions{
     display: flex;
-    text-align: right;
     align-items: center;
     justify-content: space-between;
-    text-align: justify;
+    // text-align: justify;
+    text-align: right;
     p{
+        padding: 1rem;
         color: v.$blue;
-        font-size: 1.35rem;
+        font-size: 1.4rem;
+        width: 18rem;
+        height: auto;
+    }
+    @include m.tablet{
+       
+        p{
+            width: 53rem;
+            font-size: 3rem;
+        }
     }
 }
  

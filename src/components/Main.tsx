@@ -10,7 +10,7 @@ function Main (){
             <Header/>
             <PictureMain/>      
 
-            <h4>Empresa comprometida con el medio ambiente</h4>
+            <h4>Empresa 100% comprometida con el medio ambiente</h4>
             <div className={styles.nosotros}>
 
                 <div className={styles.nostrosContainer}>
@@ -19,8 +19,8 @@ function Main (){
                         <CarouselMain/>
                         <p >
                             En un mundo donde el agua es un recurso cada vez más escaso, Meka 
-                            responde a este llamado con maquinaria de tratamiento de agua diseñados 
-                            para enfrentar los desafíos actuales de contaminación y sostenibilidad.
+                            responde a este llamado con Plantas Tratadoras de Agua, diseñadas 
+                            para enfrentar los desafíos actuales ante la contaminación y sostenibilidad.
                         </p>
                             <div className={styles.description2}>
                                 <p>

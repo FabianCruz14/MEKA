@@ -9,7 +9,7 @@ import img4 from '../assets/webp/a.webp'
 
 
 const CarouselMain : React.FC = () => (
-    <Carousel className={styles.carouselPics} autoplay>
+    <Carousel className={styles.carouselPics} autoplay={{ dotDuration: true }} autoplaySpeed={5000}>
         
             <img src={img1} alt="imagen 1" className={styles.carouselPic} />
        
