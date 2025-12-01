@@ -1,116 +1,28 @@
 @use '../styles/variables' as v;
 @use '../styles/mixins' as m;
 
-.main {
-    height: 30rem;
-    position: relative;
-    background-image: url('../assets/webp/maq3.webp');
-    // background-position: center;
-    background-size: cover ;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-position: 20%;
+p {
+    color: v.$blue;
+    background-color: v.$primary;
+}
+.nosotros {
+    @include m.container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 22rem;
 
-    @include m.tablet{
-        height: 35rem;
-    }
-    @include m.desktop{
-        height: 50rem;
-    }
-    .overlay{
-        position: absolute;
-        background-color: rgba(v.$greenTea, 25%);
-        height: 100%;
-        // background-color: red;
-        inset: 0;
-        // z-index: 2;
-        display: flex;
-        align-items: center;
-        // align-content: flex-start;
-
-        // @include m.mobile{
-
-        // }
-    }
     
+    p{
+        color: v.$primary;
+        font-weight: 600;
+        font-size: 1.2rem;
+
+    }
 }
 
-.mainContent{
-    display: flex; 
-    flex-direction: column;
-    align-content: flex-start;
-    justify-content: space-around;
-    margin-left: 4rem;
-    margin-top: 6rem;
-    background-color: rgba( v.$cyan, 95%);
-    width: 19rem;
-    // @include m.mobile{
-    //     height: 10rem;
-    // }
-    text-align: left;
-    @include m.tablet{
-        margin-top: 10rem;
-        margin-left: 6rem;
-        width: 27.5rem;
-    }
-    
-    @include m.desktop {
-        width: 40rem;
-        margin-left: 15rem;
-    }
-
-    h1 {
-        @include m.mobile{
-    
-            font-size: 2.7rem;
-        }
-        @include m.tablet{
-            font-size: 5rem;
-        }
-        @include m.desktop{
-            font-size: 8rem;
-        }
-
-        // background-color:rgba( v.$secondary, 40%);
-        color: v.$light;
-        margin: 0;
-        letter-spacing: .1rem;
-        font-family: v.$fontSecondary;
-        // @include m.borderText(.1rem);
-    }
-    h3{
-        @include m.mobile{
-
-            font-size: 1.4rem;
-        }
-        @include m.tablet{
-            font-size: 2rem;
-        }
-        @include m.desktop{
-            font-size: 3rem;
-        }
-        margin: 0;
-        padding: 0;
-        border: none;
-        color: v.$light;
-        // @include m.borderText(.2rem);
-
-    }
-    span {
-        @include m.mobile{
-            font-size: 1rem;
-        }
-        @include m.tablet{
-            font-size: 1.5rem;
-        }
-        @include m.desktop{
-            font-size: 2rem;
-        }
-        // width: 20rem;
-        color: v.$light;
-        letter-spacing: .3rem;
-        font-weight: 600;
-        align-items: center;
-    }
-
+.description{
+    // height: 2rem;
+    width: 18rem;
+    text-align: right;
 }

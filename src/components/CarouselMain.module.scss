@@ -1,3 +1,14 @@
-.carouselContainer{
-    height: 68rem;
+.carouselPics{
+    height: 20rem;
+    width: 15rem;
+    align-items: left;
+}
+
+.carouselPic {
+    height: auto;
+    width: auto;
+    img {
+        // background-image: cover;
+        background-position: center;
+    }
 }
