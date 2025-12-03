@@ -43,9 +43,9 @@ function Header () {
                         {/* we use a condicional ? to show or hide a hamburger menu */}
                         {/* <div className={`${menuOpen ? styles.mobileMenu : ''}`}>
                             </div> */}
-                        <a href="#" className={styles.a} >Nosotros</a>
-                        <a href="#" className={styles.a} >Productos</a>
-                        <a href="#" className={styles.a} >Contacto</a>                        
+                        <Link to="/" onClick={()=> setMenuOpen(false)}>Nosotros</Link>
+                        <Link to='/products' onClick={()=> setMenuOpen(false)}>Productos</Link>
+                        <Link to="/contact" onClick={()=> setMenuOpen(false)}>Contacto</Link>                      
                     </nav>
 
 
