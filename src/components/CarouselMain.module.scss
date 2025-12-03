@@ -2,12 +2,14 @@
 @use '../styles/variables' as v;
 
 .carouselPics{
-    height: 20rem;
-    width: 15rem;
+    width: 20rem;
+    height: auto;
     align-items: left;
+    // margin-top: 2rem;
+    // margin-left: 2rem;
     @include m.tablet {
-        height: 35rem;
-        width: 26.5rem;
+        height: auto;
+        width: 35rem;
     }
     @include m.desktop{
         height: 69rem;

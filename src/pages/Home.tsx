@@ -18,14 +18,16 @@ function Home (){
                         <div className={styles.description}>
                             <p >
                                 En un mundo donde el agua es un recurso cada vez más escaso, Meka 
-                                responde a este llamado con Plantas Tratadoras de Agua, diseñadas 
+                                responde a este llamado 
+                            </p>  
+                                    <span>
+                                        Plantas Tratadoras de Aguas Residuales
+                                        </span>
+                                <p>
+                                     diseñadas 
                                 para enfrentar los desafíos actuales ante la contaminación y 
                                 sostenibilidad.
-                            </p>  
-                            <p>
-                                    Potabilización, bombeo y desmineralización con tiempos de tratamiento 
-                                    menores a una hora
-                            </p>
+                                    </p> 
                             <div className={styles.show}>
                                 <p>
                                     Nuestros procesos, libres de químicos, aseguran el cumplimiento de 
@@ -37,6 +39,10 @@ function Home (){
                         </div>
                     </div>
                     <div className={styles.extend}>
+                                <p>
+                                        Potabilización, bombeo y desmineralización con tiempos de tratamiento 
+                                        menores a una hora
+                                </p>
                             <p>
                             Nuestros procesos, libres de químicos aseguran el cumplimiento de las normas NOM-001, 
                             002 y 003, ofreciendo agua limpia y segura para riego, reúso o descarga. 
