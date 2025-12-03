@@ -3,12 +3,24 @@
 
 .main{
     display: block;
+    height: auto;
 }
 h4 {
     font-size: 1rem;
     color: v.$blue;
-    text-align: center
+    text-align: center;
+    margin: .5rem;
 }
+@include m.desktop{
+    h4 {
+        font-size: 1.5rem;
+    }
+    }
+    @include m.desktopXL{
+        h4 {
+        font-size: 2rem;
+    }
+    }
 @include m.tablet{
     h4 {
         font-size: 2rem;
@@ -20,54 +32,103 @@ h4 {
     align-items: center;
     justify-content: space-between;
     height: auto;
-
-    @include m.desktop{
-        height: 80rem;
-    }
 }
 
 .carouselDesc{
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
     // background-color: red;
 }
 .description{
-    margin-left: 0;
+    // margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content:safe;
     height: auto;
     width: 15rem;
     padding: 1rem;
     text-align: center;
+
+    @include m.miniMobile{
+        width: 23rem;
+    }
+    @include m.miniTablet{
+        width: 23rem;
+    }
+    @include m.tablet{
+        width: 29rem;
+    }
+    @include m.desktop{
+        width: 40rem;
+    }
+    @include m.desktopXL{
+        width: 60rem;
+    }
+
     span{
         color: v.$blue;
         font-size: 1.4rem;
-        margin-bottom: 3rem;
+        text-align: left;
+        // margin-bottom: 3rem;
+        @include m.miniMobile{
+            font-size: 1.5rem;
+        }
+        @include m.miniTablet{
+            font-size: 2.3rem;
+        }
+        @include m.tablet {
+            font-size: 3rem;
+        }
+        @include m.desktop{
+            font-size: 6.5rem;
+        }
+        @include m.desktopXL{
+            font-size: 6.5rem;
+        }
     }
 
     p{
-        margin-top: 1.5rem;
-        margin-bottom: 2rem;
+        // margin-top: 1.5rem;
+        // margin-bottom: 2rem;
         color: v.$primary;
         font-weight: 600;
         text-align: left;
         font-size: 1.2rem;
+        @include m.miniMobile{
+            font-size: .99rem;
+        }
+        @include m.miniTablet{
+            font-size: 1.6rem;
+        }
         @include m.tablet{
             font-size: 2rem;
         }
+        @include m.desktop{
+            font-size: 2.5rem;
+        }
+        @include m.desktopXL{
+            font-size: 3rem;
+        }
     }
 }
-.show {
-    margin-top: 2rem;
+// .show {
+//     margin-top: 2rem;
 
-    @include m.mobile {
-        display: none;
-    }
-    @include m.tablet{
-
-        display: none;
-    }
-    color: v.$primary;
-}
+//     @include m.mobile {
+//         display: none;
+//     }
+//     @include m.miniTablet {
+//         display: none;
+//     }
+//     @include m.tablet{
+//         display: none;
+//     }
+//     @include m.desktop{
+//         display: block;
+//     }
+//     color: v.$primary;
+// }
 
 .extend {
     p{
@@ -75,6 +136,18 @@ h4 {
         color : v.$primary;
         text-align: left;
         margin-top: .1rem;
+        @include m.miniTablet{
+            font-size: 2rem;
+        }
+        @include m.tablet{
+            font-size: 2.8rem;
+        }
+        @include m.desktop{
+            font-size: 3.5rem;
+        }
+        @include m.desktopXL{
+            font-size: 4.2rem;
+        }
     }
     @include m.mobile{
         margin-top: .6rem;
@@ -84,4 +157,6 @@ h4 {
     @include m.tablet{
         display: block;
     }
+
+    
 }

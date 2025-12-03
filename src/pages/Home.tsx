@@ -18,7 +18,7 @@ function Home (){
                         <div className={styles.description}>
                             <p >
                                 En un mundo donde el agua es un recurso cada vez más escaso, Meka 
-                                responde a este llamado 
+                                responde a este llamado con sus;
                             </p>  
                                     <span>
                                         Plantas Tratadoras de Aguas Residuales
@@ -28,21 +28,21 @@ function Home (){
                                 para enfrentar los desafíos actuales ante la contaminación y 
                                 sostenibilidad.
                                     </p> 
-                            <div className={styles.show}>
+                            {/* <div className={styles.show}>
                                 <p>
                                     Nuestros procesos, libres de químicos, aseguran el cumplimiento de 
                                     las normas NOM-001, NOM-002 y NOM-003 ofreciendo agua limpia y 
                                     segura para riego, reúso o descarga.
                                 </p>
-                            </div>
+                            </div> */}
 
                         </div>
                     </div>
                     <div className={styles.extend}>
-                                <p>
-                                        Potabilización, bombeo y desmineralización con tiempos de tratamiento 
-                                        menores a una hora
-                                </p>
+                            <p>
+                                Potabilización, bombeo y desmineralización con tiempos de tratamiento 
+                                menores a una hora
+                            </p>
                             <p>
                             Nuestros procesos, libres de químicos aseguran el cumplimiento de las normas NOM-001, 
                             002 y 003, ofreciendo agua limpia y segura para riego, reúso o descarga. 

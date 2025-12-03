@@ -1,12 +1,21 @@
 @use 'variables' as v;
 
 // RESPONSIVE MIXINS
+@mixin miniMobile {
+    @media (min-width: v.$miniMobile) {
+        @content;
+    }
+}
 @mixin mobile {
     @media (max-width: v.$mobile) {
         @content;     
     }
 }
-
+@mixin miniTablet {
+    @media (min-width: v.$miniTablet){
+        @content;
+    }
+}
 @mixin tablet {
     @media (min-width: v.$tablet) {
         @content;        
