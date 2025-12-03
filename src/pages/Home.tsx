@@ -1,13 +1,12 @@
-import PictureMain from "./PictureMain";
-import CarouselMain from "./CarrouselMain";
-import Header from "./Header";
-import Footer from "./Footer";
-import styles from './Main.module.scss'
+import PictureMain from "../components/PictureMain";
+import CarouselMain from "../components/CarrouselMain";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import styles from './Home.module.scss'
 
-function Main (){
+function Home (){
     return (
         <div className={styles.main}>
-                <Header/>
                 <PictureMain/>      
 
                 <h4>Empresa 100% comprometida con el medio ambiente</h4>
@@ -39,20 +38,19 @@ function Main (){
                     </div>
                     <div className={styles.extend}>
                             <p>
-                            Nuestros procesos, libres de químicos y con tiempos de tratamiento 
-                            menores a una hora, aseguran el cumplimiento de las normas NOM-001, 
+                            Nuestros procesos, libres de químicos aseguran el cumplimiento de las normas NOM-001, 
                             002 y 003, ofreciendo agua limpia y segura para riego, reúso o descarga. 
-                            Meka es la elección inteligente para quienes buscan hacer una diferencia 
+                            {/* Meka es la elección inteligente para quienes buscan hacer una diferencia 
                             real en la gestión del agua.
-                            Juntos, podemos cerrar el ciclo del agua de manera sostenible.</p>
+                            Juntos, podemos cerrar el ciclo del agua de manera sostenible. */}
+                            </p>
                     </div>
                     
                     
 
                 </div>
-                <Footer/>
         </div>
     )
 }
 
-export default Main;
+export default Home;

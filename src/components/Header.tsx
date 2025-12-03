@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styles from './Header.module.scss'
+import { Link } from "react-router-dom";
 import '../styles/main.scss'
 import logo from "../assets/webp/mekaInc.webp"
 
@@ -30,9 +31,11 @@ function Header () {
 
                 </div>
                     <nav className= {styles.navMain}>
-                            <a href="#" className={styles.a} >Nosotros</a>
-                            <a href="#" className={styles.a} >Productos</a>
-                            <a href="#" className={styles.a} >Contacto</a>
+                            {/* <Link to="#" className={styles.a}>Us</Link> */}
+                            {/* <a href="#" className={styles.a} >Nosotros</a> */}
+                            <Link to="/" >Nosotros</Link>
+                            <Link to='/product'>Producto</Link>
+                            <Link to="/contact" >Contacto</Link>
                             
                     </nav>
 

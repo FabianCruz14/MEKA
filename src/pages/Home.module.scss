@@ -20,17 +20,14 @@ h4 {
     align-items: center;
     justify-content: space-between;
     height: auto;
-    @include m.tablet{
-        height: 38rem;
-        // width: auto;
-
-    }
+    
     @include m.desktop{
-        height: 74rem;
+        height: 80rem;
     }
 
     
     p{
+        margin-top: 0;
         color: v.$primary;
         font-weight: 600;
         text-align: justify;
@@ -46,25 +43,32 @@ h4 {
     justify-content: space-between;
 }
 .description{
+    margin-left: 0;
     width: 50%;
     height: 20rem;
 }
 .show {
+    p{
+
+        margin-top: 2rem;
+    }
     @include m.mobile {
         display: none;
     }
     @include m.tablet{
-        display: block;
+        
+        display: none;
     }
     color: v.$primary;
 }
 
 .extend {
     @include m.mobile{
+        margin-top: 2rem;
         display: block;
     }
 
     @include m.tablet{
-        display: none;
+        display: block;
     }
 }
