@@ -11,16 +11,28 @@
 
 // header content a logoMarca and span
 .headerContent {
-    padding: 1.5rem;
-
     @include m.container;
     display: flex;
-    @include m.mobile{
-        flex-direction: column;
-    }
-    @include m.miniTablet{
-        flex-direction: column;
-    }
+    gap: 2rem;
+
+    // padding: 1.5rem;
+    // @include m.container;
+    // @include m.mobile{
+    //     display: flex;
+    //     flex-direction: column;
+    // }
+    // @include m.miniTablet{
+    //     flex-direction: column;
+    // }
+    // @include m.tablet{
+    //     display: block;
+    // }
+    // @include m.desktop{
+    //     display: block;
+    // }
+    // @include m.desktopXL{
+    //     display: flex;
+    // }
     justify-content: space-between;
     align-items: center;
 
@@ -38,18 +50,12 @@
     display: flex;
     align-items: center;
     
-    a {
-        display: flex;
-        align-items: flex-end;
-        text-decoration: none;
-        gap: 1rem;
-    }
-    
     span {
         color: v.$primary;
         font-size: 6rem;
         font-weight: 800;
         letter-spacing: -.6rem;
+        text-align: center;
         
         @include m.mobile {
             font-size: 4rem;
@@ -59,7 +65,7 @@
 }
 // navMain its a container who contain all links to pages
 .navMain{
-    display: flex;
+    display: none;
     align-items: center;
     gap: 4rem;
 
@@ -76,11 +82,8 @@
         }
     }
 
-    @include m.miniTablet {
-        display: none;
-    }
-
     @include m.tablet{
+        display: flex;
         gap: 2rem;
         flex-direction: row;
         a {
@@ -92,6 +95,9 @@
         }
     }
     @include m.desktop { 
+        display: flex;
+        gap: 2rem;
+        flex-direction: row;
         a {
             font-size: 3.1rem;
 
@@ -100,30 +106,57 @@
             }
         }
     }
-    
+    @include m.desktopXL { 
+        display: flex;
+        gap: 2rem;
+        flex-direction: row;
+        a {
+            font-size: 3.1rem;
 
-    @include m.mobile{
-        display: none;
+            &:hover{
+                font-size: 3.5rem;
+            }
+        }
+    }
+    @include m.desktopXXL { 
+        display: flex;
+        gap: 2rem;
+        flex-direction: row;
+        a {
+            font-size: 3.1rem;
+
+            &:hover{
+                font-size: 3.5rem;
+            }
+        }
     }
 }
 
 
 .burger {
-    display: none;
     background: none;
     border: none;
     color: v.$primary;
     cursor: pointer;
     font-size: 3rem;
     padding: 0.5rem;
-    
     @include m.mobile {
         display: block;
     }
     @include m.miniTablet{
         display: block;
     }
+    @include m.tablet{
+        display: none;
+    }
+    @include m.desktop{
+        display: none;
+    }
+    @include m.desktopXL{
+        display: none;
+    }
 
+    
 }
 .logoBurger{
     display: flex;
@@ -180,12 +213,14 @@
 }
 
 .menuMobile.active {
+    @include m.mobile{
         display: flex;
         text-align: center;
         max-height: 300px;
         opacity: 1;
         transform:translateY(100);
         padding: 1rem 0;
+    }
     
 }
 

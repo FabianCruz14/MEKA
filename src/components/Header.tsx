@@ -14,7 +14,6 @@ function Header () {
             <div className={styles.headerContent}>
                 
                 <div className={styles.logoBurger}>
-
                     <div className={styles.logoMarca}>
                         <a href="/"> 
                             <img src={logo} alt="Logo Meka Ind" className={styles.logo} />
@@ -30,26 +29,20 @@ function Header () {
                         </button>
 
                 </div>
+               
                     <nav className= {styles.navMain}>
-                            {/* <Link to="#" className={styles.a}>Us</Link> */}
-                            {/* <a href="#" className={styles.a} >Nosotros</a> */}
-                            <Link to="/" >Nosotros</Link>
-                            <Link to='/products'>Productos</Link>
-                            <Link to="/contact" >Contacto</Link>
-                            
+                        <Link to="/" >Nosotros</Link>
+                        <Link to='/products'>Productos</Link>
+                        <Link to="/contact" >Contacto</Link>
                     </nav>
-
-                    <nav className= {`${styles.menuMobile} ${menuOpen ? styles.active : styles.hidden}`}>
-                        {/* we use a condicional ? to show or hide a hamburger menu */}
-                        {/* <div className={`${menuOpen ? styles.mobileMenu : ''}`}>
-                            </div> */}
-                        <Link to="/" onClick={()=> setMenuOpen(false)}>Nosotros</Link>
-                        <Link to='/products' onClick={()=> setMenuOpen(false)}>Productos</Link>
-                        <Link to="/contact" onClick={()=> setMenuOpen(false)}>Contacto</Link>                      
-                    </nav>
-
+            
 
             </div>
+                <nav className= {`${styles.menuMobile} ${menuOpen ? styles.active : styles.hidden}`}>
+                    <Link to="/" onClick={()=> setMenuOpen(false)}>Nosotros</Link>
+                    <Link to='/products' onClick={()=> setMenuOpen(false)}>Productos</Link>
+                    <Link to="/contact" onClick={()=> setMenuOpen(false)}>Contacto</Link>                      
+                </nav>
         </header>
     )
 }
