@@ -34,7 +34,7 @@ function Header () {
                             {/* <Link to="#" className={styles.a}>Us</Link> */}
                             {/* <a href="#" className={styles.a} >Nosotros</a> */}
                             <Link to="/" >Nosotros</Link>
-                            <Link to='/product'>Producto</Link>
+                            <Link to='/products'>Productos</Link>
                             <Link to="/contact" >Contacto</Link>
                             
                     </nav>

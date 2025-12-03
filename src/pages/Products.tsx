@@ -1,13 +1,10 @@
 import React from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import styles from './Products.module.scss'
 
 function Products () {
     return (
-        <div>
-            <Header/>
-                <h1 style={{color: 'red'}}>PRODUCTOS</h1>
-            <Footer/>
+        <div className= {styles.products}>
+            <h1>PRODUCTOS</h1>
         </div>
     )
 }
