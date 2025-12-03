@@ -13,7 +13,6 @@
 .headerContent {
     @include m.container;
     display: flex;
-    gap: 2rem;
 
     // padding: 1.5rem;
     // @include m.container;
@@ -55,7 +54,6 @@
         font-size: 6rem;
         font-weight: 800;
         letter-spacing: -.6rem;
-        text-align: center;
         
         @include m.mobile {
             font-size: 4rem;

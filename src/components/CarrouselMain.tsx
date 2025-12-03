@@ -12,6 +12,7 @@ const CarouselMain : React.FC = () => (
     <Carousel className={styles.carouselPics} 
         autoplay={{ dotDuration: true }} 
         autoplaySpeed={5000}
+        effect="fade"
         fade = {true}
         >
         
