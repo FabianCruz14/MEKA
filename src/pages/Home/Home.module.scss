@@ -112,23 +112,6 @@ h4 {
         }
     }
 }
-// .show {
-//     margin-top: 2rem;
-
-//     @include m.mobile {
-//         display: none;
-//     }
-//     @include m.miniTablet {
-//         display: none;
-//     }
-//     @include m.tablet{
-//         display: none;
-//     }
-//     @include m.desktop{
-//         display: block;
-//     }
-//     color: v.$primary;
-// }
 
 .extend {
     p{

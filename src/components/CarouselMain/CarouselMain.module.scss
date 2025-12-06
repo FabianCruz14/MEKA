@@ -1,18 +1,24 @@
 @use '../../styles/mixins' as m;
 @use '../../styles/variables' as v;
 .carouselPics{
-    width: 20rem;
+    // width: 10rem;
     height: auto;
+    width: 20rem;
     align-items: left;
     // margin-top: 2rem;
     // margin-left: 2rem;
     @include m.tablet {
-        height: auto;
+        // height: auto;
         width: 35rem;
     }
     @include m.desktop{
         height: 69rem;
         width: 52rem;
+    }
+    img {
+        width: 25rem;
+        height: 25rem;
+        background-size: cover;
     }
 }
 

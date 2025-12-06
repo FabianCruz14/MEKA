@@ -1,14 +1,9 @@
 import React from "react";
 import { Carousel } from "antd";
 import styles from './CarouselMain.module.scss';
+import { carouselProps } from "../../types";
 
-import img1 from '../../assets/webp/test1.webp'
-import img2 from '../../assets/webp/maq2.webp';
-import img3 from '../../assets/webp/4.webp';
-import img4 from '../../assets/webp/a.webp';
-
-
-const CarouselMain : React.FC = () => (
+const CarouselMain : React.FC<carouselProps>  = (props) => (
     <Carousel className={styles.carouselPics} 
         autoplay={{ dotDuration: true }} 
         autoplaySpeed={5000}
@@ -16,17 +11,17 @@ const CarouselMain : React.FC = () => (
         fade = {true}
         >
         
-            <img src={img1} alt="imagen 1" className={styles.carouselPic} />
+            <img src={props.img1} alt="imagen 1" className={styles.carouselPic} />
        
 
        
-            <img src={img2} alt="imagen 2"  className={styles.carouselPic} />
+            <img src={props.img2} alt="imagen 2"  className={styles.carouselPic} />
         
 
         
-            <img src={img3} alt="imagen 2" className={styles.carouselPic} />
+            <img src={props.img3} alt="imagen 3" className={styles.carouselPic} />
         
-            <img src={img4} alt="imagen 2" className={styles.carouselPic} />
+            <img src={props.img4} alt="imagen 4" className={styles.carouselPic} />
     </Carousel>
 );
 

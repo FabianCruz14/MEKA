@@ -2,6 +2,12 @@ import PictureMain from "../../components/PictureMain/PictureMain";
 import CarouselMain from "../../components/CarouselMain/CarouselMain";
 import styles from './Home.module.scss'
 
+import img1 from '../../assets/webp/test1.webp'
+import img2 from '../../assets/webp/maq2.webp';
+import img3 from '../../assets/webp/4.webp';
+import img4 from '../../assets/webp/a.webp';
+
+
 function Home (){
     return (
         <div className={styles.main}>
@@ -12,7 +18,14 @@ function Home (){
                 <div className={styles.nosotros}>
                     
                     <div className={styles.carouselDesc}>
-                        <CarouselMain/>
+                        <CarouselMain
+                            title="Fotos de la empresa y sus trabajos"
+                            img1={img1}
+                            img2={img2}
+                            img3={img3}
+                            img4={img4}
+                            
+                            />
                         <div className={styles.description}>
                             <p >
                                 En un mundo donde el agua es un recurso cada vez más escaso, Meka 
