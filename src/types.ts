@@ -1,4 +1,14 @@
-export interface HeaderProps {
-    activeLink? : string;
-    onContactClick? : () => void;
+export interface CardProps {
+    title : string;
+    description : string;
+    src : string;
+}
+
+export interface carouselProps {
+    title: string;
+    img1 : string;
+    img2 : string;
+    img3 : string;
+    img4? : string;
+    description : string;
 }

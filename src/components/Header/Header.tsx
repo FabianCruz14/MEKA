@@ -1,8 +1,7 @@
 import { useState } from "react";
-import styles from './Header.module.scss'
+import styles from '../Header.module.scss'
 import { Link } from "react-router-dom";
-import '../styles/main.scss'
-import logo from "../assets/webp/mekaInc.webp"
+import logo from "../../assets/webp/favicon.webp"
 
 function Header () {
         // adding a useState to handler the hamburger nav

@@ -2,10 +2,10 @@ import React from "react";
 import { Carousel } from "antd";
 import styles from './CarouselMain.module.scss';
 
-import img1 from '../assets/webp/test1.webp';
-import img2 from '../assets/webp/maq2.webp';
-import img3 from '../assets/webp/4.webp';
-import img4 from '../assets/webp/a.webp'
+import img1 from '../../assets/webp/test1.webp'
+import img2 from '../../assets/webp/maq2.webp';
+import img3 from '../../assets/webp/4.webp';
+import img4 from '../../assets/webp/a.webp';
 
 
 const CarouselMain : React.FC = () => (

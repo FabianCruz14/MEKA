@@ -1,0 +1,74 @@
+@use '../../styles/mixins' as m;
+@use '../../styles/variables' as v;
+
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: v.$secondary;
+    align-items: center;
+    
+    h3{
+        font-size: 1rem;
+        color: v.$primary;
+        text-align: center;        
+        margin-top: 0;
+        margin-bottom: 0;
+        background-color: v.$secondary;
+        @include m.tablet {
+            font-size: 1.5rem;
+        }
+        @include m.desktop{
+            font-size: 2.4rem;
+        }
+    }
+    
+    // aplicamos el mixin para los estilos responsives del footer
+    // @include m.mobile {
+    //     padding: 1rem;
+    //     height: auto;
+    //     flex-direction: column;
+
+    //     h3{
+        //         font-size: 1.3rem;
+        //     }
+        // }
+}
+
+.footerContent {
+    @include m.container;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:baseline;
+}
+
+.link{
+    font-size: 1rem;
+}
+
+.navFooter {
+    margin-left: 1rem;
+    display: flex;
+    gap: 1rem;    
+    a{
+        font-size: 1.3rem;
+        color: v.$primary;
+        
+        @include m.tablet{
+        font-size: 2rem;
+
+        }
+        &:hover {
+            color: rgb(4, 77, 22);
+        }
+    }
+
+    @include m.tablet {
+        flex-direction: row;
+        gap: 3rem;
+    }
+}
+.logo {
+    margin-top: 1rem;
+    height: 5.5rem;
+}

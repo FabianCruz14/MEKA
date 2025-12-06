@@ -1,7 +1,5 @@
-import PictureMain from "../components/PictureMain";
-import CarouselMain from "../components/CarrouselMain";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import PictureMain from "../../components/PictureMain/PictureMain";
+import CarouselMain from "../../components/CarouselMain/CarouselMain";
 import styles from './Home.module.scss'
 
 function Home (){

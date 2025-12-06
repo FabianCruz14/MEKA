@@ -5,9 +5,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 
 
-import Home from './pages/Home';
-import Products from './pages/Products';
-import Contact from './pages/Contact';
+import Home from './pages/Home/Home';
+import Products from './pages/Products/Products';
+import Contact from './pages/Contact/Contact';
 
 function App() {
   return (

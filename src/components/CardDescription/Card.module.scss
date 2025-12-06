@@ -1,0 +1,14 @@
+@use '../../styles/mixins' as m;
+@use '../../styles/variables' as v;
+
+.card {
+    width: 37rem;
+
+    img {
+        width: 35rem;
+        height: 20rem;
+        // background-position: center;
+        // background-repeat: none;
+    }
+    
+}

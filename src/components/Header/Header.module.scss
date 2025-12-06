@@ -1,6 +1,5 @@
-@use '../styles/variables' as v;
-@use '../styles/mixins' as m;
-@use '../styles/main.scss';
+@use '../../styles/mixins' as m;
+@use '../../styles/variables' as v;
 
 // in th header, we add a logo, brand name, and 3 links to other pages
 .header{
@@ -13,7 +12,6 @@
 .headerContent {
     @include m.container;
     display: flex;
-    gap: 2rem;
 
     // padding: 1.5rem;
     // @include m.container;
@@ -55,7 +53,6 @@
         font-size: 6rem;
         font-weight: 800;
         letter-spacing: -.6rem;
-        text-align: center;
         
         @include m.mobile {
             font-size: 4rem;
