@@ -6,7 +6,7 @@
     height: auto;
 }
 h4 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     color: v.$blue;
     text-align: center;
     margin: .5rem;
@@ -35,25 +35,24 @@ h4 {
 }
 
 .carouselDesc{
-    margin-top: 2rem;
+    // margin-top: 2rem;
     display: flex;
     // justify-content: space-between;
     align-items: center;
     // background-color: red;
 }
 .description{
-    // margin-left: 0;
+    margin: 1rem;
     display: flex;
     flex-direction: column;
-    // justify-content: safe;
-    height: auto;
-    width: 15rem;
-    padding: .7rem;
-    text-align: center;
+    // margin-left: 0;
+    justify-content: space-between;
+    height: 25rem;
+    
 
-    @include m.miniMobile{
-        width: 23rem;
-    }
+    // @include m.miniMobile{
+    //     width: 100%;
+    // }
     @include m.miniTablet{
         width: 23rem;
     }
@@ -66,6 +65,7 @@ h4 {
     @include m.desktopXL{
         width: 60rem;
     }
+
     .hiddenMobile{
         display: none;
         
@@ -74,12 +74,18 @@ h4 {
             font-size: 2.3rem;
         }
         @include m.tablet {
+            display: block;
+
             font-size: 3rem;
         }
         @include m.desktop{
+            display: block;
+
             font-size: 6.5rem;
         }
         @include m.desktopXL{
+            display: block;
+
             font-size: 6.5rem;
         }
 
@@ -87,7 +93,7 @@ h4 {
     span{
         color: v.$blue;
         font-size: 1.5rem;
-        text-align: left;
+        text-align: center;
         // margin-bottom: 3rem;
         @include m.miniMobile{
             font-size: 2.6rem;
@@ -109,14 +115,12 @@ h4 {
 
     p{
         // margin-top: 1.5rem;
-        // margin-bottom: 2rem;
+        margin-bottom: 2rem;
         color: v.$primary;
         font-weight: 500;
         text-align: left;
-        font-size: 9rem;
-        @include m.miniMobile{
-            font-size: 1.6rem;
-        }
+        font-size: 2rem;
+        
         @include m.miniTablet{
             font-size: 1.6rem;
         }
@@ -137,7 +141,8 @@ h4 {
         font-size: 2rem;
         color : v.$primary;
         text-align: left;
-        margin-top: .1rem;
+        margin-top: 1rem;
+        margin-bottom: .4rem;
         @include m.miniTablet{
             font-size: 2rem;
         }

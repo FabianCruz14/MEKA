@@ -17,10 +17,10 @@ function Home (){
 
                 <div className={styles.nosotros}>
                     
-                            <p >
-                                En un mundo donde el agua es un recurso cada vez más escaso, Meka 
-                                responde a esta emergencia con sus:
-                            </p>  
+                    <p >
+                        En un mundo donde el agua es un recurso cada vez más escaso, Meka 
+                        responde a esta emergencia con sus:
+                    </p>  
                     <div className={styles.carouselDesc}>
                         <CarouselMain
                             title="Fotos de la empresa y sus trabajos"
@@ -31,23 +31,26 @@ function Home (){
                             
                             />
                         <div className={styles.description}>
+                            <span>
+                                Plantas Tratadoras de Aguas Residuales
+                            </span>
+
                             <p className={styles.hiddenMobile}>
                                 En un mundo donde el agua es un recurso cada vez más escaso, Meka 
                                 responde a esta emergencia con sus:
                             </p> 
-                                    <span>
-                                        Plantas Tratadoras de Aguas Residuales
-                                        </span>
-                                <p>
-                                     Diseñadas para enfrentar los desafíos actuales ante la contaminación y 
-                                    sostenibilidad.
-                                    </p> 
+
+                            <p>
+                                Diseñadas para enfrentar los desafíos actuales ante la contaminación y 
+                                sostenibilidad.
+                            </p> 
                         </div>
+
                     </div>
                     <div className={styles.extend}>
                             <p>
                                 Potabilización, bombeo y desmineralización con tiempos de tratamiento 
-                                menores a una hora
+                                menores a una hora.
                             </p>
                             <p>
                             Nuestros procesos, libres de químicos aseguran el cumplimiento de las normas NOM-001, 
