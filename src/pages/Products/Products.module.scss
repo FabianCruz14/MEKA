@@ -6,25 +6,46 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    h1 {
-        margin: .5rem;
-        text-align: center;
-        padding: .4rem;
-        font-size: 3rem;
-        color: v.$primary;
-    }
+}
+h1 {
+    margin: .5rem;
+    text-align: center;
+    padding: .4rem;
+    font-size: 3rem;
+    color: v.$primary;
+}
+
+p {
+    margin: 0;
+    color: v.$primary;
+    font-size: 2rem;
+}
+
+blockquote {
+    color: v.$primary;
+    font-weight: 700;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    color: v.$primary;
+}
+.procesos{
+    width: 100%;
+    padding: .1rem;
+    display: flex;
+    margin-top: 2rem;
+    // text-align: center;
+    justify-content: space-between;
     
     p {
-        margin: 0;
-        color: v.$primary;
-        font-size: 2rem;
+        width: 16rem;
+        font-size: 1.7rem;
     }
     
-    blockquote {
-        color: v.$primary;
-        font-weight: 700;
-        margin: 0;
-        margin-bottom: 1rem;
-        font-size: 1.4rem;
-    }
-}
+ }

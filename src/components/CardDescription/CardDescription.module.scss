@@ -1,0 +1,29 @@
+@use '../../styles/mixins' as m;
+@use '../../styles/variables' as v;
+
+.card {
+    width: 37rem;
+    background-color: v.$secondary;
+    border-radius: 2rem;
+    margin-bottom: 2.5rem;
+
+    img {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+        width: 37rem;
+        height: 37rem;
+        background-size: cover;
+    }
+    
+
+    h3 {
+        color : v.$primary;
+        margin-left: 1rem;
+        margin-bottom: 1.5rem;
+        font-weight: 800;
+    }
+    
+    p{
+        margin: 1rem;
+    }
+}

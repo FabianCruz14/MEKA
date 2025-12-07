@@ -6,6 +6,7 @@ export interface CardProps {
 
 export interface carouselProps {
     title: string;
+    width? : number;
     src? : string;
     img1? : string;
     img2? : string;

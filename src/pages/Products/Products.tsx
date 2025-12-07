@@ -5,13 +5,19 @@ import CarouselMain from "../../components/CarouselMain/CarouselMain";
 
 import img1 from '../../assets/webp/electrofloculacion.webp'
 import img2 from '../../assets/webp/elk.webp'
-import img3 from '../../assets/webp/test4.webp'
-import img4 from '../../assets/webp/oxd.webp'
+import img3 from '../../assets/webp/oxd.webp'
+import img4 from '../../assets/webp/test4.webp'
+
+import card1 from '../../assets/webp/c.webp'
+import card2 from '../../assets/webp/ptaMun.webp'
+import card3 from '../../assets/webp/3.webp'
 
 function Products () {
     return (
         <div className= {styles.products}>
-            <h1>Plantas de Tramiento  de Aguas Residuales</h1>
+            <div>
+
+            <h1>Plantas de Tramiento  de Aguas Residuales (PTAR)</h1>
 
             <p>
                 El proceso de tratamiento de agua por 
@@ -24,6 +30,14 @@ function Products () {
             </blockquote>
             
             <div className={styles.procesos}>
+                <p>La parte central de esta tecnología es la electro-floculación,
+                    seguida por una oxidación con ozono y 
+                    OH- disminuyendo los sólidos suspendidos, turbiedad, bacterias 
+                    y solutos de alto peso molecular
+                    </p>
+                    {/* con una eficiencia de 
+                    remoción de contaminantes de más del 90% 
+                    , disminuyendo DBO y DQO. */}
                 <CarouselMain
                     title="imagenes de la electrofloculacion y oxidacion"
                     img1={img1}
@@ -33,12 +47,41 @@ function Products () {
                 />
             </div>
 
+            </div>
+            <div className={styles.banner}>
+
+            </div>
+            
+            <div className={styles.trajes}>
+                <h2>Diseñamos la PTAR que
+                    mas se ajuste a sus necesidades 
+                </h2>
+
+
+            </div>
+
             <CardDescription
-                title="Plantas tratadoras municipales"
-                src={img1}
-                description="La parte central de esta tecnología como primera 
-                etapa de es la electro-floculación"
+                title="PTAR Industriales"
+                src={card1}
+                description="Diseñadas para tratar los efluentes de fábricas, complejos manufactureros y parques industriales. 
+                Nuestras plantas cumplen con las normas ambientales más exigentes."
             />
+
+            <CardDescription
+                title="PTAR Municipales"
+                src={card2}
+                description="Sistemas integrales para el tratamiento de aguas 
+                residuales urbanas, desde pequeñas localidades hasta ciudades medianas."
+            />
+
+            <CardDescription
+                title="PTAR para Rastros"
+                src={card3}
+                description="Soluciones diseñadas para los desafíos únicos de rastros, 
+                mataderos, granjas y procesamiento de alimentos. "
+            />
+
+
         </div>
 
     )

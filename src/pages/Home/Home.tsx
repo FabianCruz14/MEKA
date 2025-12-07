@@ -2,10 +2,10 @@ import PictureMain from "../../components/PictureMain/PictureMain";
 import CarouselMain from "../../components/CarouselMain/CarouselMain";
 import styles from './Home.module.scss'
 
-import img1 from '../../assets/webp/test1.webp'
-import img2 from '../../assets/webp/maq2.webp';
+import img1 from  '../../assets/webp/pta3.webp';
+import img2 from '../../assets/webp/cover1.webp';
 import img3 from '../../assets/webp/4.webp';
-import img4 from '../../assets/webp/a.webp';
+import img4 from '../../assets/webp/c.webp';
 
 
 function Home (){

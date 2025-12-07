@@ -1,27 +1,17 @@
 import React from "react";
 import { Card } from "antd";
 import { CardProps } from "../../types";
-import styles from './Card.module.scss';
+import styles from './CardDescription.module.scss';
 
-const { Meta } = Card;
 
 const CardDescription : React.FC<CardProps> = (props) => (
-    <Card 
-        hoverable
-        className={styles.card}
-        style={{
-            backgroundColor: '#c4e2acff'
-        }}
-        cover = {
-            <img
-                draggable = {false}
-                alt = {props.title}
-                src = {props.src}
-            />
-        }
-    >
-        <Meta className={styles.meta} title = {props.title} description = {props.description}/>
-    </Card>
+    <div className={styles.card}>
+        <img src={props.src} alt={props.title} />
+        <div className={styles.cardDescription}>
+            <h3 className={styles.titleCard}>{props.title}</h3>
+            <p className={styles.description}>{props.description}</p>
+        </div>
+    </div>
 );
 
 export default CardDescription;
