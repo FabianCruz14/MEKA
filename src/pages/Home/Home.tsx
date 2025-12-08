@@ -11,9 +11,9 @@ import img4 from '../../assets/webp/c.webp';
 function Home (){
     return (
         <div className={styles.main}>
-                <PictureMain/>      
+            <PictureMain/>      
 
-                <h4>Empresa 100% comprometida con el medio ambiente</h4>
+            <h4>Empresa 100% comprometida con el medio ambiente</h4>
 
                 <div className={styles.nosotros}>
                     
@@ -35,11 +35,7 @@ function Home (){
                                 Plantas Tratadoras de Aguas Residuales
                             </span>
 
-                            <p className={styles.hiddenMobile}>
-                                En un mundo donde el agua es un recurso cada vez más escaso, Meka 
-                                responde a esta emergencia con sus:
-                            </p> 
-
+                    
                             <p>
                                 Diseñadas para enfrentar los desafíos actuales ante la contaminación y 
                                 sostenibilidad.
@@ -47,7 +43,7 @@ function Home (){
                         </div>
 
                     </div>
-                    <div className={styles.extend}>
+                    
                             <p>
                                 Potabilización, bombeo y desmineralización con tiempos de tratamiento 
                                 menores a una hora.
@@ -59,11 +55,14 @@ function Home (){
                             real en la gestión del agua.
                             Juntos, podemos cerrar el ciclo del agua de manera sostenible. */}
                             </p>
-                    </div>
-                    
-                    
+                </div> {/* nosotros */}
 
-                </div>
+            <div className={styles.band}>
+                <h1>+90% de eficiencia en remoción de contaminantes </h1>
+
+            </div>
+            
+
         </div>
     )
 }

@@ -6,142 +6,35 @@
     height: auto;
 }
 h4 {
-    font-size: 2.2rem;
+    font-size: 2rem;
     color: v.$blue;
     text-align: center;
     margin: .5rem;
-}
-@include m.desktop{
-    h4 {
-        font-size: 1.5rem;
+
+    @include m.mobile{
+        font-size: 2.5rem;
     }
+    @include m.tablet{
+        font-size: 2.8rem;
     }
-    @include m.desktopXL{
-        h4 {
-        font-size: 2rem;
-    }
-    }
-@include m.tablet{
-    h4 {
-        font-size: 2rem;
+    @include m.desktop{
+        font-size: 3.8rem;
     }
 }
+    
+    
+   
 .nosotros {
     @include m.container;
     display: block;
     align-items: center;
     justify-content: space-between;
     height: auto;
-}
-
-.carouselDesc{
-    // margin-top: 2rem;
-    display: flex;
-    // justify-content: space-between;
-    align-items: center;
-    // background-color: red;
-}
-.description{
-    margin: 1rem;
-    display: flex;
-    flex-direction: column;
-    // margin-left: 0;
-    justify-content: space-between;
-    height: 25rem;
-    
-
-    // @include m.miniMobile{
-    //     width: 100%;
-    // }
-    @include m.miniTablet{
-        width: 23rem;
-    }
-    @include m.tablet{
-        width: 29rem;
-    }
-    @include m.desktop{
-        width: 40rem;
-    }
-    @include m.desktopXL{
-        width: 60rem;
-    }
-
-    .hiddenMobile{
-        display: none;
-        
-        @include m.miniTablet{
-            display: block;
-            font-size: 2.3rem;
-        }
-        @include m.tablet {
-            display: block;
-
-            font-size: 3rem;
-        }
-        @include m.desktop{
-            display: block;
-
-            font-size: 6.5rem;
-        }
-        @include m.desktopXL{
-            display: block;
-
-            font-size: 6.5rem;
-        }
-
-    }
-    span{
-        color: v.$blue;
-        font-size: 1.5rem;
-        text-align: center;
-        // margin-bottom: 3rem;
-        @include m.miniMobile{
-            font-size: 2.6rem;
-            font-weight: 900;
-        }
-        @include m.miniTablet{
-            font-size: 2.3rem;
-        }
-        @include m.tablet {
-            font-size: 3rem;
-        }
-        @include m.desktop{
-            font-size: 6.5rem;
-        }
-        @include m.desktopXL{
-            font-size: 6.5rem;
-        }
-    }
-
     p{
-        // margin-top: 1.5rem;
-        margin-bottom: 2rem;
-        color: v.$primary;
-        font-weight: 500;
-        text-align: left;
-        font-size: 2rem;
-        
-        @include m.miniTablet{
-            font-size: 1.6rem;
-        }
-        @include m.tablet{
-            font-size: 2rem;
-        }
-        @include m.desktop{
-            font-size: 2.5rem;
-        }
-        @include m.desktopXL{
-            font-size: 3rem;
-        }
-    }
-}
-
-.extend {
-    p{
-        font-size: 2rem;
+        font-size: 1.7rem;
         color : v.$primary;
         text-align: left;
-        margin-top: 1rem;
+        margin-top: 1.4rem;
         margin-bottom: .4rem;
         @include m.miniTablet{
             font-size: 2rem;
@@ -164,6 +57,102 @@ h4 {
     @include m.tablet{
         display: block;
     }
+}
 
-    
+.carouselDesc{
+    margin-top: 1rem;
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    // background-color: red;
+    height: 100%;
+}
+.description{
+    display: flex;
+    flex-direction: column;
+    // margin-left: 0;
+    justify-content: space-between;
+    width: 100%;    
+
+    span{
+        margin: .7rem;
+        color: v.$blue;
+        font-size: 1.9rem;
+        font-weight: 600;
+        text-align: center;
+        // margin-bottom: 3rem;
+
+        @include m.mobile{
+            font-size: 3rem;
+            padding: .7rem;
+
+        }
+        @include m.miniTablet{
+            font-size: 3.5rem;
+        }
+        @include m.tablet {
+            font-size: 4rem;
+        }
+        @include m.desktop{
+            font-size: 6rem;
+        }
+        @include m.desktopXL{
+            font-size: 6.5rem;
+        }
+    }
+
+    p{
+        // margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        color: v.$primary;
+        font-weight: 500;
+        text-align: right;
+        font-size: 1.6rem ;
+        
+        @include m.miniTablet{
+            font-size: 2.2rem;
+        }
+        @include m.tablet{
+            font-size: 2.6rem;
+        }
+        @include m.desktop{
+            font-size: 3rem;
+        }
+        @include m.desktopXL{
+            font-size: 3.4rem;
+        }
+        @include m.desktopXXL{
+            font-size: 4rem;
+        }
+    }
+}
+
+.band{
+    margin-top: 1rem;
+    background-color: v.$primary;
+    h1{
+        font-size: 1.8rem;
+        letter-spacing: .4rem;
+        @include m.mobile{
+            font-size: 2rem;
+            letter-spacing: .7rem;
+        }
+        @include m.miniTablet{
+            font-size: 2.4rem;
+            letter-spacing: .5rem;
+        }
+        @include m.tablet{
+            font-size: 2.8rem;
+            letter-spacing: .4rem;
+        }
+        @include m.desktop{
+            font-size: 3.2rem;
+            letter-spacing: .5rem;
+        }
+        @include m.desktopXL{
+            font-size: 3.7rem;
+            letter-spacing: 1rem;
+        }
+        color: v.$secondary;
+    }
 }

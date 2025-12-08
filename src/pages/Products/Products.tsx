@@ -15,37 +15,35 @@ import card3 from '../../assets/webp/3.webp'
 function Products () {
     return (
         <div className= {styles.products}>
-            <div>
 
-            <h1>Plantas de Tramiento  de Aguas Residuales (PTAR)</h1>
+                <h1>Plantas de Tramiento  de Aguas Residuales (PTAR)</h1>
 
-            <p>
-                El proceso de tratamiento de agua por 
-                oxidación avanzada ofrece una solución que le 
-                permitirá cumplir con las normas vigentes para descarga 
-                de aguas residuales 
-            </p>
-            <blockquote>
-                 (NOM-001, NOM-002 e inclusive la NOM-003) 
-            </blockquote>
-            
-            <div className={styles.procesos}>
-                <p>La parte central de esta tecnología es la electro-floculación,
-                    seguida por una oxidación con ozono y 
-                    OH- disminuyendo los sólidos suspendidos, turbiedad, bacterias 
-                    y solutos de alto peso molecular
-                    </p>
-                    {/* con una eficiencia de 
-                    remoción de contaminantes de más del 90% 
-                    , disminuyendo DBO y DQO. */}
-                <CarouselMain
-                    title="imagenes de la electrofloculacion y oxidacion"
-                    img1={img1}
-                    img2={img2}
-                    img3={img3}
-                    img4={img4}
-                />
-            </div>
+                <p>
+                    El proceso de tratamiento de agua por 
+                    oxidación avanzada ofrece una solución que le 
+                    permitirá cumplir con las normas vigentes para descarga 
+                    de aguas residuales 
+                </p>
+                <blockquote>
+                    (NOM-001, NOM-002 e inclusive la NOM-003) 
+                </blockquote>
+                
+                <div className={styles.procesos}>
+                    <p>La parte central de esta tecnología es la electro-floculación,
+                        seguida por una oxidación con ozono y 
+                        OH- disminuyendo los sólidos suspendidos, turbiedad, bacterias 
+                        y solutos de alto peso molecular
+                        </p>
+                        {/* con una eficiencia de 
+                        remoción de contaminantes de más del 90% 
+                        , disminuyendo DBO y DQO. */}
+                    <CarouselMain
+                        title="imagenes de la electrofloculacion y oxidacion"
+                        img1={img1}
+                        img2={img2}
+                        img3={img3}
+                        img4={img4}
+                    />
 
             </div>
             <div className={styles.banner}>

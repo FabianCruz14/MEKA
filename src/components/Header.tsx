@@ -30,11 +30,11 @@ function Header () {
 
                 </div>
                
-                    <nav className= {styles.navMain}>
-                        <Link to="/" >Nosotros</Link>
-                        <Link to='/products'>Productos</Link>
-                        <Link to="/contact" >Contacto</Link>
-                    </nav>
+                <nav className= {styles.navMain}>
+                    <Link to="/" >Nosotros</Link>
+                    <Link to='/products'>Productos</Link>
+                    <Link to="/contact" >Contacto</Link>
+                </nav>
             
 
             </div>

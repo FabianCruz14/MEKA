@@ -2,7 +2,12 @@
 @use '../../styles/variables' as v;
 
 .card {
-    width: 37rem;
+    width: 33rem;
+
+    @include m.mobile{
+        width: 39rem;
+        // height: 39rem;
+    }
     background-color: v.$secondary;
     border-radius: 2rem;
     margin-bottom: 2.5rem;
@@ -10,9 +15,14 @@
     img {
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
-        width: 37rem;
-        height: 37rem;
         background-size: cover;
+        width: 33rem;
+        height: 33rem;
+
+        @include m.mobile{
+        width: 39rem;
+        height:39rem;
+    }
     }
     
 

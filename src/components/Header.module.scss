@@ -6,7 +6,11 @@
 .header{
     background-color: v.$secondary;
     width: 100%;
-    position: relative;    
+    position: relative; 
+    
+    @include m.desktop {
+        height: 10rem;
+    }
 }
 
 // header content a logoMarca and span
@@ -67,7 +71,7 @@
 .navMain{
     display: none;
     align-items: center;
-    gap: 4rem;
+    // gap: 4rem;
 
     a {
         color: v.$primary;
