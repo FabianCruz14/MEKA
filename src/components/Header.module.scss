@@ -8,9 +8,9 @@
     width: 100%;
     position: relative; 
     
-    @include m.desktop {
-        height: 10rem;
-    }
+    // @include m.tablet {
+    //     height: 10rem;
+    // }
 }
 
 // header content a logoMarca and span
@@ -18,36 +18,17 @@
     @include m.container;
     display: flex;
     gap: 2rem;
-
-    // padding: 1.5rem;
-    // @include m.container;
-    // @include m.mobile{
-    //     display: flex;
-    //     flex-direction: column;
-    // }
-    // @include m.miniTablet{
-    //     flex-direction: column;
-    // }
-    // @include m.tablet{
-    //     display: block;
-    // }
-    // @include m.desktop{
-    //     display: block;
-    // }
-    // @include m.desktopXL{
-    //     display: flex;
-    // }
     justify-content: space-between;
     align-items: center;
 
 }
 
 .logo {
-    height: 9.5rem;
+    height: 8rem;
     width: auto;
-
-    @include m.mobile{
-        height: 6rem;
+    
+    @include m.tablet{
+        height: 10rem;
     }
 }
 .logoMarca {
@@ -56,13 +37,14 @@
     
     span {
         color: v.$primary;
-        font-size: 6rem;
-        font-weight: 800;
-        letter-spacing: -.6rem;
-        text-align: center;
+        font-size: 5rem;
+        font-weight: 700;
+        letter-spacing: -.4rem;
+        // text-align: center;
+        // margin-bottom: 2rem;
         
-        @include m.mobile {
-            font-size: 4rem;
+        @include m.tablet{
+            font-size: 6rem;
             letter-spacing: -.4rem;
         }
     }
@@ -70,27 +52,14 @@
 // navMain its a container who contain all links to pages
 .navMain{
     display: none;
-    align-items: center;
-    // gap: 4rem;
-
-    a {
-        color: v.$primary;
-        font-size: 3rem;
-        font-weight: 600;
-        text-decoration: none;
-        align-content: center;
-        
-        &:hover{
-            font-weight: 100;
-            font-size: 2.6rem;
-        }
-    }
-
+    
     @include m.tablet{
         display: flex;
         gap: 2rem;
         flex-direction: row;
         a {
+            color: v.$primary;
+            font-weight: 700;
             font-size: 2.1rem;
 
             &:hover{
@@ -99,9 +68,6 @@
         }
     }
     @include m.desktop { 
-        display: flex;
-        gap: 2rem;
-        flex-direction: row;
         a {
             font-size: 3.1rem;
 
@@ -111,26 +77,23 @@
         }
     }
     @include m.desktopXL { 
-        display: flex;
-        gap: 2rem;
-        flex-direction: row;
+        gap: 5rem;
+
         a {
-            font-size: 3.1rem;
+            font-size: 3.5rem;
 
             &:hover{
-                font-size: 3.5rem;
+                font-size: 3.8rem;
             }
         }
     }
     @include m.desktopXXL { 
-        display: flex;
-        gap: 2rem;
-        flex-direction: row;
+        gap: 9rem;
         a {
-            font-size: 3.1rem;
+            font-size: 3.6rem;
 
             &:hover{
-                font-size: 3.5rem;
+                font-size: 3.9rem;
             }
         }
     }
@@ -142,14 +105,9 @@
     border: none;
     color: v.$primary;
     cursor: pointer;
-    font-size: 3rem;
+    font-size: 3.6rem;
     padding: 0.5rem;
-    @include m.mobile {
-        display: block;
-    }
-    @include m.miniTablet{
-        display: block;
-    }
+
     @include m.tablet{
         display: none;
     }
