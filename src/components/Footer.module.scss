@@ -9,17 +9,17 @@
     
     h3{
         padding: 1rem;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: v.$primary;
         text-align: center;        
         margin-top: 0;
         margin-bottom: 0;
         background-color: v.$secondary;
         @include m.tablet {
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
-        @include m.desktop{
-            font-size: 2.4rem;
+        @include m.desktopXL{
+            font-size: 3rem;
         }
     }
     
@@ -37,7 +37,7 @@
 
 .footerContent {
     @include m.container;
-    display: flex;
+    // display: flex;
     // flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -46,36 +46,61 @@
 .link{
     font-size: 1rem;
 }
-.marcaFooter{
-    display: block;
+.logoMarca{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.brand{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    // align-items: center;
     h2{
         margin-top: .2rem;
+        margin-bottom: 0;
         text-align: center;
-        font-size: 2.5rem;
+        font-size: 2.3rem;
         font-weight: 900;
     }
+    span {
+        color: v.$primary;
+        margin: 0;
+    }
+}
+
+.navWsp{
+    @include m.container;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+}
+.sociales{
+    display: flex;
+    gap: 1.4rem;
 }
 .navFooter {
     margin-left: 1rem;
     display: flex;
-    gap: 1rem;   
-    .link{
-        font-size: 1.7rem;
-    } 
+    flex-direction: column;
+    gap: .5rem;   
+    // .link{
+    //     font-size: 1.7rem;
+    // } 
     a{
-        font-size: 1.3rem;
+        font-size: 1.7rem;
         color: v.$primary;
-        
-        @include m.tablet{
-        font-size: 2rem;
-
-        }
         &:hover {
             color: rgb(4, 77, 22);
         }
+        
+        @include m.tablet{
+        font-size: 3rem;
+        
     }
+}
 
-    @include m.tablet {
+@include m.tablet {
         flex-direction: row;
         gap: 3rem;
     }

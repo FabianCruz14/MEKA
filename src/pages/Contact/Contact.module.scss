@@ -4,7 +4,41 @@
 .contact {
 
     h1 {
-        color: red;
+        color: v.$primary;
     }
+
+}
+
+.contactContainer {
+    @include m.container;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    img {
+        width: 34rem;
+        @include m.mobile {
+            width: 38rem;
+        }
+
+        @include m.miniTablet{ 
+            width: 70rem;
+            height: auto;
+
+        }
+
+        @include m.tablet{
+            width: 80rem;
+        }
+
+        @include m.desktop{
+            height: 55rem;
+            font-size: 3.1rem;
+        }
+         @include m.desktopXL{
+            height: 55rem;
+            font-size: 3.1rem;
+        }
+    }
+
 
 }

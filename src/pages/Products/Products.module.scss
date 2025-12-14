@@ -13,12 +13,49 @@ h1 {
     padding: .4rem;
     font-size: 3rem;
     color: v.$primary;
+
+    @include m.mobile{
+        font-size: 3.2rem;
+    }
+    @include m.miniTablet{
+        font-size: 3.4rem;
+    }
+    @include m.tablet{
+        font-size: 3.8rem;
+    }
+    @include m.desktop{
+        font-size: 4.2rem;
+    }
+    @include m.desktopXL{
+        font-size: 4.4rem;
+    }
+    @include m.desktopXXL{
+        font-size: 5.5rem;
+    }
 }
 
 p {
     margin: 0;
     color: v.$primary;
     font-size: 2rem;
+    @include m.mobile{
+        font-size: 2.2rem;
+    }
+    @include m.miniTablet{
+        font-size: 2.4rem;
+    }
+    @include m.tablet{
+        font-size: 2.8rem;
+    }
+    @include m.desktop{
+        font-size: 3.4rem;
+    }
+    @include m.desktopXL{
+        font-size: 3rem;
+    }
+    @include m.desktopXXL{
+        font-size: 3.7rem;
+    }
 }
 
 blockquote {
@@ -28,12 +65,49 @@ blockquote {
     margin-bottom: 1rem;
     font-size: 1.4rem;
     text-align: center;
+    @include m.mobile{
+        font-size: 1.8rem;
+    }
+    @include m.miniTablet{
+        font-size: 2rem;
+    }
+    @include m.tablet{
+        font-size: 2.2rem;
+    }
+    @include m.desktop{
+        font-size: 2.6rem;
+    }
+    @include m.desktopXL{
+        font-size: 2.8rem;
+    }
+    @include m.desktopXXL{
+        font-size: 3rem;
+    }
 }
 
 h2 {
     text-transform: uppercase;
+    text-align: center;
     font-size: 1.8rem;
     color: v.$primary;
+    @include m.mobile{
+        font-size: 2.2rem;
+    }
+    @include m.miniTablet{
+        font-size: 2.4rem;
+    }
+    @include m.tablet{
+        font-size: 2.8rem;
+    }
+    @include m.desktop{
+        font-size: 3rem;
+    }
+    @include m.desktopXL{
+        font-size: 3.4rem;
+    }
+    @include m.desktopXXL{
+        font-size: 4rem;
+    }
 }
 .procesos{
     width: 100%;
@@ -44,8 +118,52 @@ h2 {
     justify-content: space-between;
     
     p {
-        width: 16rem;
-        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+
+        text-align: center;
+        padding: .5rem;
+        margin-bottom: 0;
+        background-color: rgba(v.$greenTea, 25%);
+        border-radius: 1rem;
+        width: 50%;
+        height: 23rem;
+        font-size: 1.44rem;
+
+        @include m.miniMobile{
+            font-size: 1.65rem;
+        }
+
+        @include m.mobile {
+            height: 30rem;
+            font-size: 2rem;
+        }
+
+        @include m.miniTablet{
+            height: 33rem;
+            font-size: 2.2rem;
+        }
+
+        @include m.tablet{
+            height: 36rem;
+            font-size: 2.4rem;
+        }
+
+        @include m.desktop{
+            height: 55rem;
+            font-size: 3.1rem;
+        }
+         @include m.desktopXL{
+            height: 55rem;
+            font-size: 3.1rem;
+        }
     }
     
+ }
+
+ .cards{
+    @include m.desktopXL{
+
+        display: grid;
+    }
  }

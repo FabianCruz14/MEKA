@@ -6,7 +6,7 @@ function PictureMain (){
             
             <div className={styles.overlay}>
                 <div className={styles.mainContent}>
-                    <h1>Meka Water</h1>
+                    <h1>Ingenieria Meka</h1>
                     <h3>Soluciones eficientes para el tratamiento del agua</h3>
                     <span>Puebla. Mx</span>
                 </div> 

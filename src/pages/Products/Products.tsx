@@ -34,9 +34,6 @@ function Products () {
                         OH- disminuyendo los sólidos suspendidos, turbiedad, bacterias 
                         y solutos de alto peso molecular
                         </p>
-                        {/* con una eficiencia de 
-                        remoción de contaminantes de más del 90% 
-                        , disminuyendo DBO y DQO. */}
                     <CarouselMain
                         title="imagenes de la electrofloculacion y oxidacion"
                         img1={img1}
@@ -44,9 +41,6 @@ function Products () {
                         img3={img3}
                         img4={img4}
                     />
-
-            </div>
-            <div className={styles.banner}>
 
             </div>
             
@@ -58,26 +52,30 @@ function Products () {
 
             </div>
 
-            <CardDescription
-                title="PTAR Industriales"
-                src={card1}
-                description="Diseñadas para tratar los efluentes de fábricas, complejos manufactureros y parques industriales. 
-                Nuestras plantas cumplen con las normas ambientales más exigentes."
-            />
+            <div className={styles.cards}>
 
-            <CardDescription
-                title="PTAR Municipales"
-                src={card2}
-                description="Sistemas integrales para el tratamiento de aguas 
-                residuales urbanas, desde pequeñas localidades hasta ciudades medianas."
-            />
 
-            <CardDescription
-                title="PTAR para Rastros"
-                src={card3}
-                description="Soluciones diseñadas para los desafíos únicos de rastros, 
-                mataderos, granjas y procesamiento de alimentos. "
-            />
+                <CardDescription
+                    title="PTAR Industriales"
+                    src={card1}
+                    description="Diseñadas para tratar los efluentes de fábricas, complejos manufactureros y parques industriales. 
+                    Nuestras plantas cumplen con las normas ambientales más exigentes."
+                />
+
+                <CardDescription
+                    title="PTAR Municipales"
+                    src={card2}
+                    description="Sistemas integrales para el tratamiento de aguas 
+                    residuales urbanas, desde pequeñas localidades hasta ciudades medianas."
+                />
+
+                <CardDescription
+                    title="PTAR para Rastros"
+                    src={card3}
+                    description="Soluciones diseñadas para los desafíos únicos de rastros, 
+                    mataderos, granjas y procesamiento de alimentos. "
+                />
+            </div>
 
 
         </div>

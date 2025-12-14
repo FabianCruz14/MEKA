@@ -4,28 +4,44 @@
 .card {
     width: 33rem;
 
+    background-color: v.$secondary;
+    border-radius: 2rem;
+    margin-bottom: 2.5rem;
+    
+    
     @include m.mobile{
         width: 39rem;
         // height: 39rem;
     }
-    background-color: v.$secondary;
-    border-radius: 2rem;
-    margin-bottom: 2.5rem;
-
+    
+    @include m.tablet{
+        width: 68rem;
+        display: flex;
+    }
+    @include m.desktop{
+        width: 41rem;
+        display: block;
+    }
     img {
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
         background-size: cover;
         width: 33rem;
         height: 33rem;
-
+        
         @include m.mobile{
-        width: 39rem;
-        height:39rem;
-    }
+            width: 39rem;
+            height:39rem;
+        }
+        @include m.tablet{
+            width: 68rem;
+        }
+        @include m.desktop{
+            width: 41rem;
+            height:41rem;
+        }
     }
     
-
     h3 {
         color : v.$primary;
         margin-left: 1rem;
@@ -37,3 +53,4 @@
         margin: 1rem;
     }
 }
+
