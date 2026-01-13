@@ -31,7 +31,7 @@ function Header () {
                 </div>
                
                 <nav className= {styles.navMain}>
-                    <Link to="/" >Nosotros</Link>
+                    <Link to="/nosotros" >Nosotros</Link>
                     <Link to='/products'>Productos</Link>
                     <Link to="/contact" >Contacto</Link>
                 </nav>

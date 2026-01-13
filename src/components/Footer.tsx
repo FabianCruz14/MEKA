@@ -8,7 +8,7 @@ import maps from '../assets/webp/location.webp';
 function Footer () {
     const currentYear = new Date().getFullYear();
     const wspLink = 'https://wa.me/message/MXUAMG45PPVBD1';
-    const fbLink = 'www.google.com'
+    const fbLink = 'https://facebook.com'
     const mapsLink = 'https://maps.app.goo.gl/pVFA7kFUzS7TSfxy5'
     return (
         <footer className={styles.footer}>
@@ -29,7 +29,7 @@ function Footer () {
             <div className={styles.navWsp}>
 
                 <nav className={styles.navFooter}>
-                    <Link className={styles.link} to="/" >Nosotros</Link>
+                    <Link className={styles.link} to="/nosotros" >Nosotros</Link>
                     <Link className={styles.link} to='/products'>Productos</Link>
                     <Link className={styles.link} to="/contact" >Contacto</Link>
                 </nav>
