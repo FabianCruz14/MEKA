@@ -5,7 +5,12 @@ function Nosotros (){
         <div className={styles.nosotros}>
             <h1>Líderes en Ingenieria Ambiental y Soluciones del tratamiento del agua</h1>
 
-            <p></p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada sollicitudin velit, ac hendrerit nulla 
+                ullamcorper sit amet. Pellentesque molestie sodales fringilla. Praesent at felis congue, semper justo nec, 
+                malesuada tortor. Proin lacus magna, aliquet eu vestibulum non, ullamcorper ut turpis. Curabitur mattis 
+                Nam ac velit ut mauris tempus eleifend eget sed massa. Aliquam aliquet.
+
+</p>
         </div>
     )
 }
