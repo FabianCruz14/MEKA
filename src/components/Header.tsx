@@ -39,7 +39,7 @@ function Header () {
 
             </div>
                 <nav className= {`${styles.menuMobile} ${menuOpen ? styles.active : styles.hidden}`}>
-                    <Link to="/" onClick={()=> setMenuOpen(false)}>Nosotros</Link>
+                    <Link to="/nosotros" onClick={()=> setMenuOpen(false)}>Nosotros</Link>
                     <Link to='/products' onClick={()=> setMenuOpen(false)}>Productos</Link>
                     <Link to="/contact" onClick={()=> setMenuOpen(false)}>Contacto</Link>                      
                 </nav>

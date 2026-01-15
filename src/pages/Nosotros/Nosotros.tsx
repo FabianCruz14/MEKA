@@ -4,13 +4,16 @@ function Nosotros (){
     return (
         <div className={styles.nosotros}>
             <h1>Líderes en Ingenieria Ambiental y Soluciones del tratamiento del agua</h1>
+            <h2>¿Quienes somos?</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin malesuada sollicitudin velit, ac hendrerit nulla 
-                ullamcorper sit amet. Pellentesque molestie sodales fringilla. Praesent at felis congue, semper justo nec, 
-                malesuada tortor. Proin lacus magna, aliquet eu vestibulum non, ullamcorper ut turpis. Curabitur mattis 
-                Nam ac velit ut mauris tempus eleifend eget sed massa. Aliquam aliquet.
-
-</p>
+            <p>Somos una empresa mexicana integrada por un equipo de profesionistas 
+                con amplia experiencia en Ingeniería Química-Ambiental y el ramo metalmecánico. 
+            </p>
+            <p>
+                En Ingeniería Meka Industrial, nos especializamos en ofrecer soluciones integrales 
+                para el tratamiento y potabilización del agua, así como en la ejecución de obra pública 
+                y privada de alta complejidad.
+            </p>
         </div>
     )
 }
