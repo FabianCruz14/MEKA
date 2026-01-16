@@ -41,32 +41,11 @@ p {
         object-position: center; // Controla qué parte de la imagen se ve (top, bottom, etc.)
     }
 }
-.card {
-    height: 40rem;
-    width: 90%;
-    position: relative;
-    background-image: url('../../assets/webp/us3.webp');
-    background-position: center;
-    background-size: cover;
-    margin: 2rem;
-    margin-top: 4rem;
-    border-top-left-radius: 3rem ;
-}
 
-.overlay{
-    height: 100%;
-    width: 100%;
-    border-top-left-radius: 3rem ;
 
-    position: absolute;
-    background-color: rgba(v.$primary, 50%);
-    h1{
-        color: v.$secondary;
-    }
-    p{
-        color: v.$secondary;
+.cards{
+    display: flex;
+    flex-direction: column;
     
-    }
-
 }
 

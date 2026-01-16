@@ -1,2 +1,32 @@
 @use '../../styles/mixins' as m;
 @use '../../styles/variables' as v;
+
+.cardMvv {
+    margin: 2rem;
+    width: 90%;
+    height: 42rem;
+    background-color:  v.$yellowGreen;
+    border-top-left-radius: 4rem;
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center ;
+        h3{
+            font-size: 4rem;
+            letter-spacing: 1rem;
+            font-weight: 900;
+            text-transform: uppercase;
+            margin: 2rem 0 0 0;
+            color: v.$primary;
+        }
+        h5{
+            margin: 0;
+            font-weight: 600;
+            text-align: center;
+            padding: 1.2rem;
+            font-size: 2.2rem;
+            color: v.$primary;
+        }
+    }
+
+}

@@ -1,5 +1,7 @@
 import styles from './Nosotros.module.scss'
 import img from '../../assets/webp/us1.webp'
+import CardMVV from '../../components/CardMVV/CardMVV';
+import bgMision from '../../assets/webp/us3.webp'
 
 function Nosotros (){
     return (
@@ -20,15 +22,36 @@ function Nosotros (){
                 <img src={img} alt="nosotros image" />
             </div>
 
-            <div className={styles.card}>
-                <div className={styles.overlay}>
-                    <h1>Mision</h1>
-                    <p>Somos una empresa dedicada al diseño y fabricación de soluciones integrales de 
-                        tratamiento de agua para industrias, municipios y sectores comerciales. 
-                        Utilizamos tecnología avanzada de oxidación y electro-floculación para 
-                        garantizar el cumplimiento normativo, la reutilización segura del agua y 
-                        una operación sostenible y económica.</p>
-                </div>
+            <div className={styles.cards}>
+                <CardMVV
+                    title = 'Misión'
+                    description='Nos dedicamos al diseño y fabricación de 
+                    soluciones integrales para el tratamiento de aguas industriales,
+                     municipios y sectores comerciales. Utilizamos tecnología 
+                     avanzada de oxidación y electro-floculación para garantizar 
+                     el cumplimiento normativo, la reutilización segura del agua 
+                     y una operación sostenible y económica.'
+                    urlImg={bgMision}
+                />
+                <CardMVV
+                    title = 'visión'
+                    description='Aspiramos a ser líderes en innovación y calidad en el sector 
+                    de tratamiento de agua en México y Latinoamérica, contribuyendo al medio ambiente
+                    atraves de soluciones eficientes para darle un nuevo uso a nuestro liquido vital con ayuda de
+                    equipos modulares, eficientes y de bajo costo operativo.'
+                    urlImg={bgMision}
+                />
+                <CardMVV
+                    title = 'valores'
+                    description='La innovación, calidad, sostenibilidad, integridad y la flexibilidad
+                    son nuestro centro y por el cuál trabajamos día con día, ya que garantizamos tecnologías responsables
+                    bastas en eficiencia y durabilidad para cada equipo, sumado a la atencion al cliente, que es el primer
+                     paso en nuestra ruta' 
+                    
+                urlImg={bgMision}
+                />
+
+                
             </div>
         </div>
     )
