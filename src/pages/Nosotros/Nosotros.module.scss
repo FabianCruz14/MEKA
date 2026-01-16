@@ -20,3 +20,53 @@ p {
     padding: 2rem  ;
     text-align: justify;
 }
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+// para lograr centrar una imagen y hacerla responsiva es necesario
+// meterla dentro de un contenedor hero que dentro incluiremos la imagen y con ayuda
+// del selector img le damos las propiedades objectfit y position
+.image{
+    // margin: 2rem;
+    height: 25rem;
+    width: 100%;
+
+    img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover; // La imagen se adapta como un fondo profesional
+        object-position: center; // Controla qué parte de la imagen se ve (top, bottom, etc.)
+    }
+}
+.card {
+    height: 40rem;
+    width: 90%;
+    position: relative;
+    background-image: url('../../assets/webp/us3.webp');
+    background-position: center;
+    background-size: cover;
+    margin: 2rem;
+    margin-top: 4rem;
+    border-top-left-radius: 3rem ;
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 3rem ;
+
+    position: absolute;
+    background-color: rgba(v.$primary, 50%);
+    h1{
+        color: v.$secondary;
+    }
+    p{
+        color: v.$secondary;
+    
+    }
+
+}
+

@@ -14,3 +14,9 @@ export interface carouselProps {
     img4? : string;
     description? : string;
 }
+
+export interface cardMvv {
+    title: string;
+    description: string;
+    urlImg: string;
+}

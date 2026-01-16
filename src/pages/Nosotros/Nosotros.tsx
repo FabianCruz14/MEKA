@@ -1,4 +1,5 @@
 import styles from './Nosotros.module.scss'
+import img from '../../assets/webp/us1.webp'
 
 function Nosotros (){
     return (
@@ -14,6 +15,21 @@ function Nosotros (){
                 para el tratamiento y potabilización del agua, así como en la ejecución de obra pública 
                 y privada de alta complejidad.
             </p>
+            
+            <div className={styles.image}>
+                <img src={img} alt="nosotros image" />
+            </div>
+
+            <div className={styles.card}>
+                <div className={styles.overlay}>
+                    <h1>Mision</h1>
+                    <p>Somos una empresa dedicada al diseño y fabricación de soluciones integrales de 
+                        tratamiento de agua para industrias, municipios y sectores comerciales. 
+                        Utilizamos tecnología avanzada de oxidación y electro-floculación para 
+                        garantizar el cumplimiento normativo, la reutilización segura del agua y 
+                        una operación sostenible y económica.</p>
+                </div>
+            </div>
         </div>
     )
 }
