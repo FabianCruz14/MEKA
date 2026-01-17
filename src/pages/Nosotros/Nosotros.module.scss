@@ -1,26 +1,24 @@
 @use '../../styles/variables' as v;
 @use '../../styles/mixins' as m;
-h1{
-    font-size: 2.5rem;
-    font-weight: 600;
-    padding: 1rem;
-}
-h2 {
-    font-size: 3rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    margin: 0;
-}
-
-
-p {
-    background-color: rgba(v.$secondary, 30%);
-    border-radius: 2rem;
-    margin: 2rem;
-    padding: 2rem  ;
-    text-align: justify;
-}
 .nosotros {
+    h1{
+        font-size: 2.5rem;
+        font-weight: 600;
+        padding: 1rem;
+    }
+    h2 {
+        font-size: 3rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    p {
+        background-color: rgba(v.$secondary, 30%);
+        border-radius: 2rem;
+        margin: 2rem;
+        padding: 2rem  ;
+        text-align: justify;
+    }
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -31,9 +29,21 @@ p {
 // del selector img le damos las propiedades objectfit y position
 .image{
     // margin: 2rem;
-    height: 25rem;
+    margin-bottom: 2rem;
+    height: 30rem;
     width: 100%;
-
+    @include m.mobile{
+        height: 35rem;
+    }
+    @include m.tablet{
+        height: 45rem;
+    }
+    @include m.desktop{
+        height: 65rem;
+    }
+    @include m.desktopXL{
+        height: 85rem;
+    }
     img{
         height: 100%;
         width: 100%;
@@ -46,6 +56,11 @@ p {
 .cards{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    @include m.desktop{
+        @include m.grid(3, 1rem);
+        flex-direction: row;
+    }
     
 }
 

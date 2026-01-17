@@ -7,10 +7,14 @@
     height: 42rem;
     background-color:  v.$yellowGreen;
     border-top-left-radius: 4rem;
+    @include m.desktop{
+        height: 60rem;
+        flex-direction: row;
+    }
     .content{
         display: flex;
         flex-direction: column;
-        align-items: center ;
+        align-items: center;
         h3{
             font-size: 4rem;
             letter-spacing: 1rem;
@@ -18,15 +22,45 @@
             text-transform: uppercase;
             margin: 2rem 0 0 0;
             color: v.$primary;
+            @include m.mobile{
+               font-size: 4.7rem;
+            }
+            @include m.tablet{
+                font-size: 4rem;
+            }
+            @include m.desktop{
+                font-size: 4rem;
+            }
+            @include m.desktopXL{
+                font-size: 3rem;
+            }
         }
         h5{
+            // display: flex;
+            // flex-direction: column;
+            // align-items: center ;
+
             margin: 0;
             font-weight: 600;
             text-align: center;
             padding: 1.2rem;
-            font-size: 2.2rem;
+            font-size: 2rem;
             color: v.$primary;
+            @include m.mobile{
+               font-size: 2.4rem;
+            }
+            @include m.tablet{
+                font-size: 3rem;
+            }
+            @include m.desktop{
+                font-size: 2.5rem;
+            }
+            @include m.desktopXL{
+                font-size: 3rem;
+            }
         }
+
+        
     }
 
 }
