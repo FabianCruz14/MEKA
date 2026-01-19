@@ -6,17 +6,19 @@ import bgMision from '../../assets/webp/us3.webp'
 function Nosotros (){
     return (
         <div className={styles.nosotros}>
-            <h1>Líderes en Ingenieria Ambiental y Soluciones del tratamiento del agua</h1>
             <h2>¿Quienes somos?</h2>
+            <h1>Líderes en Ingenieria Ambiental y Soluciones del tratamiento del agua</h1>
+            <div className={styles.parrafos}>
 
-            <p>Somos una empresa mexicana integrada por un equipo de profesionistas 
+               <p>Somos una empresa mexicana integrada por un equipo de profesionistas 
                 con amplia experiencia en Ingeniería Química-Ambiental y el ramo metalmecánico. 
-            </p>
-            <p>
+               </p>
+               <p>
                 En Ingeniería Meka Industrial, nos especializamos en ofrecer soluciones integrales 
-                para el tratamiento y potabilización del agua, así como en la ejecución de obra pública 
+                para el tratamiento y potabilización del agua, así como la ejecución en obra pública 
                 y privada de alta complejidad.
-            </p>
+               </p>
+            </div>
             
             <div className={styles.image}>
                 <img src={img} alt="nosotros image" />

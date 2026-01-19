@@ -4,11 +4,11 @@
 .cardMvv {
     margin: 2rem;
     width: 90%;
-    height: 42rem;
-    background-color:  v.$yellowGreen;
+    height: auto;
+    background-color:  rgba(v.$yellowGreen, 70%);
     border-top-left-radius: 4rem;
     @include m.desktop{
-        height: 60rem;
+        // height: auto;
         flex-direction: row;
     }
     .content{
@@ -26,13 +26,13 @@
                font-size: 4.7rem;
             }
             @include m.tablet{
-                font-size: 4rem;
+                font-size: 5rem;
             }
             @include m.desktop{
                 font-size: 4rem;
             }
             @include m.desktopXL{
-                font-size: 3rem;
+                font-size: 5rem;
             }
         }
         h5{
@@ -42,21 +42,22 @@
 
             margin: 0;
             font-weight: 600;
-            text-align: center;
-            padding: 1.2rem;
+            text-align: justify;
+            padding: 2.5rem;
             font-size: 2rem;
             color: v.$primary;
             @include m.mobile{
                font-size: 2.4rem;
             }
             @include m.tablet{
-                font-size: 3rem;
+                font-size: 2.6rem;
+                padding: 3rem;
             }
             @include m.desktop{
-                font-size: 2.5rem;
+                font-size: 2rem;
             }
             @include m.desktopXL{
-                font-size: 3rem;
+                font-size: 2rem;
             }
         }
 
