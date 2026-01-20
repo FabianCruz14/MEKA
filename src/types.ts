@@ -25,3 +25,8 @@ export interface pictureShadow{
     imgUrl: string;
     percent: string;
 }
+
+export interface txt{
+    title: string;
+    description: string;
+}

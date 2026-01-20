@@ -2,6 +2,7 @@ import styles from './Nosotros.module.scss'
 import img from '../../assets/webp/us1.webp'
 import CardMVV from '../../components/CardMVV/CardMVV';
 import bgMision from '../../assets/webp/us3.webp'
+import Txt from '../../components/Txt/Txt';
 
 function Nosotros (){
     return (
@@ -9,9 +10,16 @@ function Nosotros (){
             <h2>¿Quienes somos?</h2>
             <h1>Líderes en Ingenieria Ambiental y Soluciones del tratamiento del agua</h1>
             <div className={styles.parrafos}>
+                <Txt
+                title='Nuestra Identidad'
+                description='Somos una empresa dedicada al tratamiento de agua residual 
+                    y su potabilización, así como a la ejecución de todo tipo de obra pública 
+                    y privada. Contamos con un equipo de expertos en ingeniería Química-Ambiental 
+                    y metal-mecánica.'
+                />
 
-               <p>Somos una empresa mexicana integrada por un equipo de profesionistas 
-                con amplia experiencia en Ingeniería Química-Ambiental y el ramo metalmecánico. 
+                <p>Somos una empresa mexicana integrada por un equipo de profesionistas 
+                 con amplia experiencia en Ingeniería Química-Ambiental y el ramo metalmecánico. 
                </p>
                <p>
                 En Ingeniería Meka Industrial, nos especializamos en ofrecer soluciones integrales 

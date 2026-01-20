@@ -1,0 +1,14 @@
+@use '../../styles/mixins' as m;
+@use '../../styles/variables' as v;
+
+.txt{
+    width: 100%;
+    margin: 1rem auto;
+    height: auto;
+    background-color: rgba(v.$secondary, 60%);
+
+    h3{
+        font-size: 3rem;
+        color: v.$primary;
+    }
+}
