@@ -36,6 +36,7 @@ h1 {
 
 p {
     margin: 0;
+    padding: 1rem;
     color: v.$primary;
     font-size: 2rem;
     @include m.mobile{
@@ -111,11 +112,12 @@ h2 {
 }
 .procesos{
     width: 100%;
-    padding: .1rem;
+    // padding: -1rem;
     display: flex;
     margin-top: 2rem;
     // text-align: center;
-    justify-content: space-between;
+    justify-content: center;
+    height: auto;
     
     p {
         display: flex;
@@ -125,15 +127,17 @@ h2 {
         padding: .5rem;
         margin-bottom: 0;
         background-color: rgba(v.$greenTea, 25%);
-        border-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
         width: 50%;
         height: 23rem;
-        font-size: 1.44rem;
-
-        @include m.miniMobile{
-            font-size: 1.65rem;
-        }
-
+        font-size: 1.3rem;
+    }
+    @include m.mobile{
+    //     width: 39rem;
+    //     // height: 39rem;
+    // }
+    
         @include m.mobile {
             height: 30rem;
             font-size: 2rem;
@@ -151,19 +155,20 @@ h2 {
 
         @include m.desktop{
             height: 55rem;
-            font-size: 3.1rem;
+            font-size: 5rem;
         }
          @include m.desktopXL{
             height: 55rem;
-            font-size: 3.1rem;
+            font-size: 4rem;
         }
     }
     
  }
 
  .cards{
-    @include m.desktopXL{
-
+    @include m.desktop{
         display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
     }
  }

@@ -46,6 +46,8 @@
             @include m.desktop{
                 width: 31rem;
                 height: 55rem;
+                border-bottom-left-radius: 0;
+                border-top-left-radius: 0;
             }
         }
     }

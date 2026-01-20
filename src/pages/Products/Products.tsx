@@ -31,7 +31,7 @@ function Products () {
                 <div className={styles.procesos}>
                     <p>La parte central de esta tecnología es la electro-floculación,
                         seguida por una oxidación con ozono y 
-                        OH- disminuyendo los sólidos suspendidos, turbiedad, bacterias 
+                        OH- disminuyendo la turbiedad, los sólidos suspendidos, bacterias 
                         y solutos de alto peso molecular
                         </p>
                     <CarouselMain

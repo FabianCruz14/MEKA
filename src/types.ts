@@ -20,3 +20,8 @@ export interface cardMvv {
     description: string;
     urlImg: string;
 }
+
+export interface pictureShadow{
+    imgUrl: string;
+    percent: string;
+}
