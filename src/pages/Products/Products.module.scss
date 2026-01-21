@@ -90,6 +90,7 @@ h2 {
     text-transform: uppercase;
     text-align: center;
     font-size: 1.8rem;
+    padding: 0 1.5rem;
     color: v.$primary;
     @include m.mobile{
         font-size: 2.2rem;
@@ -119,51 +120,45 @@ h2 {
     justify-content: center;
     height: auto;
     
-    p {
-        display: flex;
-        align-items: center;
+        p {
+            display: flex;
+            align-items: center;
 
-        text-align: center;
-        padding: .5rem;
-        margin-bottom: 0;
-        background-color: rgba(v.$greenTea, 25%);
-        border-top-left-radius: 1rem;
-        border-bottom-left-radius: 1rem;
-        width: 50%;
-        height: 23rem;
-        font-size: 1.3rem;
-    }
-    @include m.mobile{
-    //     width: 39rem;
-    //     // height: 39rem;
-    // }
+            text-align: center;
+            padding: 1rem;
+            padding-bottom: 0;
+            margin-bottom: 0;
+            background-color: rgba(v.$greenTea, 25%);
+            border-top-left-radius: 1rem;
+            border-bottom-left-radius: 1rem;
+            width: 50%;
+            height: auto;
+            font-size: 1.2rem;
+            @include m.miniMobile {
+                // height: 30rem;
+                font-size: 1.49rem;
+            }
+            @include m.mobile {
+                // height: 30rem;
+                font-size: 1.8rem;
+            }
+            @include m.miniTablet{
+                font-size: 2.1rem;
+            }
+            @include m.tablet{
+                font-size: 2.7rem;
+                padding: 2rem;
+                padding-bottom: 0;
+            }
+            @include m.desktop{
+                font-size: 3.8rem;
+            }
+            @include m.desktopXL{
+               font-size: 4rem;
+            }
+        }
+}
     
-        @include m.mobile {
-            height: 30rem;
-            font-size: 2rem;
-        }
-
-        @include m.miniTablet{
-            height: 33rem;
-            font-size: 2.2rem;
-        }
-
-        @include m.tablet{
-            height: 36rem;
-            font-size: 2.4rem;
-        }
-
-        @include m.desktop{
-            height: 55rem;
-            font-size: 5rem;
-        }
-         @include m.desktopXL{
-            height: 55rem;
-            font-size: 4rem;
-        }
-    }
-    
- }
 
  .cards{
     @include m.desktop{

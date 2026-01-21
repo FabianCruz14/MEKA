@@ -2,6 +2,7 @@ import React from "react";
 import styles from './Products.module.scss'
 import CardDescription from "../../components/CardDescription/CardDescription";
 import CarouselMain from "../../components/CarouselMain/CarouselMain";
+import Txt from "../../components/Txt/Txt";
 
 import img1 from '../../assets/webp/electrofloculacion.webp'
 import img2 from '../../assets/webp/elk.webp'
@@ -50,7 +51,6 @@ function Products () {
                 </h2>
 
 
-            </div>
 
             <div className={styles.cards}>
 
@@ -76,10 +76,16 @@ function Products () {
                     mataderos, granjas y procesamiento de alimentos. "
                 />
             </div>
+            </div>
+
+            <Txt 
+             title="Consumibles"
+             description="Somos distribuidores de las mejores marcas en productos para el mantenimiento de  tus 
+             plantas tratadoras de agua"
+             />
 
 
         </div>
-
     )
 }
 

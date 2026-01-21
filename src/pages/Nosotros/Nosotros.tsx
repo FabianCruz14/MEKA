@@ -17,15 +17,13 @@ function Nosotros (){
                     y privada. Contamos con un equipo de expertos en ingeniería Química-Ambiental 
                     y metal-mecánica.'
                 />
+                <Txt
+                title='Nuestra Filosofía'
+                description='Somos una organización comprometida con el medio ambiente y la conservación 
+                    de los recursos naturales. Consideramos que el compromiso con la calidad es un requisito 
+                    fundamental para nuestro crecimiento y progreso tecnológico.'
+                />
 
-                <p>Somos una empresa mexicana integrada por un equipo de profesionistas 
-                 con amplia experiencia en Ingeniería Química-Ambiental y el ramo metalmecánico. 
-               </p>
-               <p>
-                En Ingeniería Meka Industrial, nos especializamos en ofrecer soluciones integrales 
-                para el tratamiento y potabilización del agua, así como la ejecución en obra pública 
-                y privada de alta complejidad.
-               </p>
             </div>
             
             <div className={styles.image}>
