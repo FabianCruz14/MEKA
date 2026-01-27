@@ -5,18 +5,12 @@
     width: 100%;
     margin: 3rem auto;
     // padding: 2rem;
-    background-color: v.$secondary;
+    background-color: rgba(v.$secondary, 60%);
     border-radius: 2rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     margin-bottom: 2.5rem;
-    
-    
-    // @include m.mobile{
-    //     width: 39rem;
-    //     // height: 39rem;
-    // }
-    
+
     @include m.tablet{
         width: 68rem;
         display: flex;
@@ -52,6 +46,7 @@
         margin-left: 1rem;
         margin-bottom: 1.5rem;
         font-weight: 800;
+        text-align: center;
     }
     
     p{

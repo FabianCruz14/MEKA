@@ -33,27 +33,23 @@ function Nosotros (){
             <div className={styles.cards}>
                 <CardMVV
                     title = 'Misión'
-                    description='Nos dedicamos al diseño y fabricación de 
-                    soluciones integrales para el tratamiento de aguas industriales,
-                     municipios y sectores comerciales. Utilizamos tecnología 
-                     avanzada de oxidación y electro-floculación para garantizar 
-                     el cumplimiento normativo, la reutilización segura del agua 
-                     y una operación sostenible y económica.'
+                    description='Diseñamos y fabricamos soluciones integrales para 
+                    el tratamiento de aguas industriales,
+                     municipales y sectores comerciales. Garantizando 
+                      la reutilización segura del agua, una operación sostenible y económica.'
                     urlImg={bgMision}
                 />
                 <CardMVV
                     title = 'visión'
-                    description='Aspiramos a ser líderes en innovación y calidad en el sector 
-                    de tratamiento de agua en México y Latinoamérica, contribuyendo al medio ambiente
-                    atraves de soluciones eficientes para darle un nuevo uso a nuestro liquido vital con ayuda de
-                    equipos modulares, eficientes y de bajo costo operativo.'
+                    description='Aspiramos a ser líderes en innovación y calidad dentro del sector 
+                    de tratamiento de aguas residuales en México y Latinoamérica, nos gusta contribuir a un buen medio ambiente
+                    y generar futuro sostenible para todos'
                     urlImg={bgMision}
                 />
                 <CardMVV
                     title = 'valores'
                     description='La innovación, calidad, sostenibilidad, integridad y la flexibilidad
-                    son nuestro centro y por el cuál trabajamos día con día, ya que garantizamos tecnologías responsables
-                    bastas en eficiencia y durabilidad para cada equipo, sumado a la atencion al cliente, que es el primer
+                    son nuestro centro y por el cuál trabajamos día con día, sumado a la atencion al cliente, que es el primer
                      paso en nuestra ruta' 
                     
                 urlImg={bgMision}

@@ -25,6 +25,10 @@ function Products () {
                     permitirá cumplir con las normas vigentes para descarga 
                     de aguas residuales 
                 </p>
+                <p>
+                    En Meka diseñamos, fabricamos e instalamos las /PTAR a la medida
+                    y para el ramo que necesite (hotelero, municipal, industiel, etc...)
+                </p>
                 <blockquote>
                     (NOM-001, NOM-002 e inclusive la NOM-003) 
                 </blockquote>
