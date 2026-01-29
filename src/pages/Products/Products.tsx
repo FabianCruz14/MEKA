@@ -10,23 +10,23 @@ import img3 from '../../assets/webp/oxd.webp'
 import img4 from '../../assets/webp/test4.webp'
 
 import card1 from '../../assets/webp/c.webp'
-import card2 from '../../assets/webp/ptaMun.webp'
+import card2 from '../../assets/webp/4.webp'
 import card3 from '../../assets/webp/3.webp'
 
 function Products () {
     return (
         <div className= {styles.products}>
 
-                <h1>Plantas de Tramiento  de Aguas Residuales (PTAR)</h1>
+                <h1>Plantas de Tramiento de Aguas Residuales (PTAR)</h1>
 
                 <p>
-                    El proceso de tratamiento de agua por 
+                    El proceso de tratamiento de aguas residuales por medio de
                     oxidación avanzada ofrece una solución que le 
                     permitirá cumplir con las normas vigentes para descarga 
                     de aguas residuales 
                 </p>
                 <p>
-                    En Meka diseñamos, fabricamos e instalamos las /PTAR a la medida
+                    En Meka diseñamos, fabricamos e instalamos las PTAR a la medida
                     y para el ramo que necesite (hotelero, municipal, industiel, etc...)
                 </p>
                 <blockquote>
@@ -56,37 +56,38 @@ function Products () {
 
 
 
-            <div className={styles.cards}>
+                <div className={styles.cards}>
 
 
-                <CardDescription
-                    title="PTAR Industriales"
-                    src={card1}
-                    description="Diseñadas para tratar los efluentes de fábricas, complejos manufactureros y parques industriales. 
-                    Nuestras plantas cumplen con las normas ambientales más exigentes."
-                />
+                    <CardDescription
+                        title="PTAR Industriales"
+                        src={card1}
+                        description="Diseñadas para tratar los efluentes de fábricas, complejos manufactureros y parques industriales. 
+                        Nuestras plantas cumplen con las normas ambientales más exigentes."
+                    />
 
-                <CardDescription
-                    title="PTAR Municipales"
-                    src={card2}
-                    description="Sistemas integrales para el tratamiento de aguas 
-                    residuales urbanas, desde pequeñas localidades hasta ciudades medianas."
-                />
+                    <CardDescription
+                        title="PTAR Municipales"
+                        src={card2}
+                        description="Sistemas integrales para el tratamiento de aguas 
+                        residuales urbanas, desde pequeñas localidades hasta ciudades medianas."
+                    />
 
-                <CardDescription
-                    title="PTAR para Rastros"
-                    src={card3}
-                    description="Soluciones diseñadas para los desafíos únicos de rastros, 
-                    mataderos, granjas y procesamiento de alimentos. "
-                />
+                    <CardDescription
+                        title="PTAR para Rastros"
+                        src={card3}
+                        description="Soluciones diseñadas para los desafíos únicos de rastros, 
+                        mataderos, granjas y procesamiento de alimentos. "
+                    />
+
+                </div>
+                    <Txt 
+                    title="Consumibles"
+                    description="Somos distribuidores de las mejores marcas en productos para el mantenimiento de  tus 
+                    plantas tratadoras de agua"
+                    />
             </div>
-            </div>
 
-            <Txt 
-             title="Consumibles"
-             description="Somos distribuidores de las mejores marcas en productos para el mantenimiento de  tus 
-             plantas tratadoras de agua"
-             />
 
 
         </div>
