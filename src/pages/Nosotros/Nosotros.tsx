@@ -3,6 +3,7 @@ import img from '../../assets/webp/us1.webp'
 import CardMVV from '../../components/CardMVV/CardMVV';
 import bgMision from '../../assets/webp/us3.webp'
 import Txt from '../../components/Txt/Txt';
+import WspAdd from '../../components/WspAdd/WspAdd';
 
 function Nosotros (){
     return (
@@ -29,6 +30,7 @@ function Nosotros (){
             <div className={styles.image}>
                 <img src={img} alt="nosotros image" />
             </div>
+            <WspAdd/>
 
             <div className={styles.cards}>
                 <CardMVV

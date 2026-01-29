@@ -1,8 +1,7 @@
 import React from "react";
 import styles from './Contact.module.scss';
 import map from '../../assets/webp/mapMeka.png';
-import wsp from '../../assets/webp/wspVD.webp'
-
+import WspAdd from "../../components/WspAdd/WspAdd";
 function Contact () {
     const mapLink = 'https://maps.app.goo.gl/RwSVG6ccPH7bqj9o6';
     const wspLink = 'https://wa.me/message/MXUAMG45PPVBD1';
@@ -19,17 +18,8 @@ function Contact () {
                 <a href={mapLink}>
                     <img src={map} alt="mapa de meka" />
                 </a>
-                <div className={styles.wsp}>
-                    <a href={wspLink}>
-                        <p>
-                            Contactanos via WhatsApp, solo da click y listo
-                        </p>
-                    </a>
-                    <a href={wspLink}>
-                        <img src={wsp} alt="wsp logo" />
-                    </a>
-                </div>
             </div>
+            <WspAdd/>
         </div>
     )
 }

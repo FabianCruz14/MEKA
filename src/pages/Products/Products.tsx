@@ -5,6 +5,7 @@ import CardDescription from "../../components/CardDescription/CardDescription";
 import CarouselMain from "../../components/CarouselMain/CarouselMain";
 import Txt from "../../components/Txt/Txt";
 import CarouselBrands from "../../components/CarouselBrands/CarouselBrands";
+import WspAdd from "../../components/WspAdd/WspAdd";
 
 import img1 from '../../assets/webp/electrofloculacion.webp'
 import img2 from '../../assets/webp/elk.webp'
@@ -97,7 +98,7 @@ function Products () {
                     />
 
             </div>
-            
+            <WspAdd/>
             <div className={styles.trajes}>
                 <h2>Diseñamos la PTAR que
                     mas se ajuste a sus necesidades 
@@ -202,6 +203,7 @@ function Products () {
                         />
                         
                     </div>
+                    <WspAdd/>
                 </div>
             </div>
 

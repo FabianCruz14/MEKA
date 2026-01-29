@@ -1,0 +1,24 @@
+@use '/src/styles/mixins' as m;
+@use '/src/styles/variables' as v;
+
+.wsp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        @include m.desktop{
+            font-size: 3.5rem;
+        }
+    }
+        img {
+            width: 5rem;
+            margin: 1rem;
+            @include m.tablet{
+                width: 7rem;
+            }
+            @include m.desktop{
+                width: auto;
+                height: 7rem;
+            }
+        }
+}
