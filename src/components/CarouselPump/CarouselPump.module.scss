@@ -1,0 +1,25 @@
+@use '../../styles/mixins' as m;
+@use '../../styles/variables' as v;
+
+.carousel{
+    width: 30rem;
+
+    @include m.mobile {
+            width: 38rem;
+        }
+
+        @include m.miniTablet{ 
+            width: 42rem;
+        }
+
+        @include m.tablet{
+            width: 38rem;
+        }
+
+        @include m.desktop{
+            height: 45rem;
+        }
+         @include m.desktopXL{
+            height: 55rem;
+        }
+}

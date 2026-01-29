@@ -5,7 +5,7 @@ export interface CardProps {
 }
 
 export interface carouselProps {
-    title: string;
+    title?: string;
     width? : number;
     src? : string;
     img1? : string;
@@ -14,6 +14,18 @@ export interface carouselProps {
     img4? : string;
     img5? : string;
     img6? : string;
+    img7? : string;
+    img8? : string;
+    img9? : string;
+    img10? : string;
+    img11? : string;
+    img12? : string;
+    img13? : string;
+    img14? : string;
+    img15? : string;
+    img16? : string;
+    img17? : string;
+    img18? : string;
     description? : string;
 }
 

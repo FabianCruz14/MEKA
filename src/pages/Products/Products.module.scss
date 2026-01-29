@@ -169,3 +169,22 @@ h2 {
         gap: 1rem;
     }
  }
+
+ .consumibles{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+.brands {
+    display: grid;
+    margin: 1rem auto;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.bombas{
+    display: block;
+    @include m.tablet{
+        display: flex;
+    }
+}
