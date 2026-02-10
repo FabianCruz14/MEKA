@@ -28,7 +28,7 @@ function Nosotros (){
             </div>
             
             <div className={styles.image}>
-                <img src={img} alt="nosotros image" />
+                <img src={img} alt="team working together" />
             </div>
             <WspAdd/>
 

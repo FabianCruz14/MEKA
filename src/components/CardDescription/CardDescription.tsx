@@ -1,5 +1,4 @@
 import React from "react";
-import { Card } from "antd";
 import { CardProps } from "../../types";
 import styles from './CardDescription.module.scss';
 
