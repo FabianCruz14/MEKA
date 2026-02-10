@@ -4,8 +4,8 @@ import map from '../../assets/webp/mapMeka.png';
 import WspAdd from "../../components/WspAdd/WspAdd";
 function Contact () {
     const mapLink = 'https://maps.app.goo.gl/RwSVG6ccPH7bqj9o6';
-    const wspLink = 'https://wa.me/message/MXUAMG45PPVBD1';
-    const fbLink = 'https://facebook.com'
+    // const wspLink = 'https://wa.me/message/MXUAMG45PPVBD1';
+    // const fbLink = 'https://facebook.com'
     return (
         <div className={styles.contact}>
             <div className={styles.contactContainer}>

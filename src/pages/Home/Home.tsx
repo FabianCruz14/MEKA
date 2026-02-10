@@ -1,6 +1,7 @@
 import PictureMain from "../../components/PictureMain/PictureMain";
 import CarouselMain from "../../components/CarouselMain/CarouselMain";
 import styles from './Home.module.scss'
+import WspAdd from "../../components/WspAdd/WspAdd";
 
 import img1 from  '../../assets/webp/pta3.webp';
 import img2 from '../../assets/webp/cover1.webp';
@@ -48,6 +49,7 @@ function Home (){
                                 Potabilización, bombeo y desmineralización con tiempos de tratamiento 
                                 menores a una hora.
                             </p>
+
                             <p>
                             Nuestros procesos, libres de químicos aseguran el cumplimiento de las normas NOM-001, 
                             002 y 003, ofreciendo agua limpia y segura para riego, reúso o descarga. 
@@ -61,6 +63,7 @@ function Home (){
                 <h1>+90% de eficiencia en remoción de contaminantes </h1>
 
             </div>
+            <WspAdd/>
             
 
         </div>

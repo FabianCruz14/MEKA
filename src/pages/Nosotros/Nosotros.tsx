@@ -9,14 +9,14 @@ function Nosotros (){
     return (
         <div className={styles.nosotros}>
             <h2>¿Quienes somos?</h2>
-            <h1>Líderes en Ingenieria Ambiental y Soluciones del tratamiento del agua</h1>
+            <h1>Líderes en Ingenieria Ambiental y Soluciones para el tratamiento del agua</h1>
             <div className={styles.parrafos}>
                 <Txt
                 title='Nuestra Identidad'
                 description='Somos una empresa dedicada al tratamiento de agua residual 
                     y su potabilización, así como a la ejecución de todo tipo de obra pública 
                     y privada. Contamos con un equipo de expertos en ingeniería Química-Ambiental 
-                    y metal-mecánica.'
+                    '
                 />
                 <Txt
                 title='Nuestra Filosofía'

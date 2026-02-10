@@ -180,6 +180,9 @@ h2 {
     margin: 1rem auto;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    @include m.tablet{
+        display: flex;
+    }
 }
 
 .bombas{

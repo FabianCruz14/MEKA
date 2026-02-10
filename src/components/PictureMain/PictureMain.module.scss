@@ -54,17 +54,17 @@
         margin: 0;
         // font-family: v.$fontSecondary;
         @include m.mobile{
-            font-size: 4.3rem;
+            font-size: 5rem;
         }
         @include m.tablet{
-            font-size: 6.1rem;
+            font-size: 5.6rem;
         }
         @include m.desktop{
-            font-size: 8rem;
+            font-size: 7.4rem;
         }
         @include m.desktopXL{
             letter-spacing: -.5rem;
-            font-size: 12.8rem;
+            font-size: 11rem;
         }
         
 

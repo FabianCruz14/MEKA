@@ -2,10 +2,7 @@ import React from "react";
 import { cardMvv } from "../../types";
 import styles from "../CardMVV/CardMVV.module.scss"
 
-const CardMVV: React.FC<cardMvv> = ({title, description, urlImg}) => {
-    const bgStyle = {
-    backgroundImage: {urlImg}
-};
+const CardMVV: React.FC<cardMvv> = ({title, description}) => {
     return (
         <div className={styles.cardMvv}>
             <div className={styles.content}>

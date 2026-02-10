@@ -4,6 +4,17 @@
 .carousel {
     width: 17rem;
     height:  auto;
+    
+    @include m.tablet{
+        width: 16rem;
+    }
+    @include m.desktop{
+        width: 22rem;
+    }
+    @include m.desktopXL{
+        width: 30rem;
+    }
+
 }
 
 .brand{
