@@ -7,8 +7,8 @@ import Txt from "../../components/Txt/Txt";
 import CarouselBrands from "../../components/CarouselBrands/CarouselBrands";
 import WspAdd from "../../components/WspAdd/WspAdd";
 
-import img1 from '../../assets/webp/electrofloculacion.webp'
-import img2 from '../../assets/webp/elk.webp'
+// import img1 from '../../assets/webp/electrofloculacion.webp'
+// import img2 from '../../assets/webp/elk.webp'
 import img3 from '../../assets/webp/oxd.webp'
 import img4 from '../../assets/webp/test4.webp'
 
