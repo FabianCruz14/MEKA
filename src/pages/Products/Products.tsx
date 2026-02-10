@@ -91,10 +91,10 @@ function Products () {
                         </p>
                     <CarouselMain
                         title="imagenes de la electrofloculacion y oxidacion"
-                        img1={img1}
-                        img2={img2}
-                        img3={img3}
                         img4={img4}
+                        // img1={img1}
+                        // img2={img2}
+                        img3={img3}
                     />
 
             </div>
