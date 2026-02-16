@@ -7,8 +7,8 @@ import maps from '../assets/webp/location.webp';
 
 function Footer () {
     const currentYear = new Date().getFullYear();
-    const wspLink = 'https://wa.me/message/MXUAMG45PPVBD1';
-    const fbLink = 'https://facebook.com'
+    const wspLink = 'https://api.whatsapp.com/send?phone=%2B522221835161';
+    const fbLink = 'https://www.facebook.com/profile.php?id=100064115823233&sk=about'
     const mapsLink = 'https://maps.app.goo.gl/pVFA7kFUzS7TSfxy5'
     return (
         <footer className={styles.footer}>
