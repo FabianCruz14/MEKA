@@ -16,13 +16,6 @@ const CarouselBrands : React.FC <carouselProps> = (props) => (
             <img src={props.img4} alt="img4" className={styles.brand} />
             <img src={props.img5} alt="img5" className={styles.brand} />
             <img src={props.img6} alt="img6" className={styles.brand} />
-
-            {/* <img src={props.img1} alt="img1" style={contentStyle} />
-            <img src={props.img2} alt="img2" style={contentStyle} />
-            <img src={props.img3} alt="img3" style={contentStyle} />
-            <img src={props.img4} alt="img4" style={contentStyle} />
-            <img src={props.img5} alt="img5" style={contentStyle} />
-            <img src={props.img6} alt="img6" style={contentStyle} /> */}
     </Carousel>
 );
 
