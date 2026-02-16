@@ -40,8 +40,8 @@
                 height: 33rem;
             }
             @include m.tablet {
-                width: 27rem;
-                height: 36rem;
+                width: auto;
+                height: 100%;
             }
             @include m.desktop{
                 width: 31rem;

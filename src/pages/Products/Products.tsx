@@ -7,10 +7,10 @@ import Txt from "../../components/Txt/Txt";
 import CarouselBrands from "../../components/CarouselBrands/CarouselBrands";
 import WspAdd from "../../components/WspAdd/WspAdd";
 
-import img1 from '../../assets/webp/oz1.webp'
+import img1 from '../../assets/webp/test4.webp'
 import img2 from '../../assets/webp/oz3.webp'
 import img3 from '../../assets/webp/oxd.webp'
-import img4 from '../../assets/webp/test4.webp'
+import img4 from '../../assets/webp/oz1.webp'
 
 import card1 from '../../assets/webp/c.webp'
 import card2 from '../../assets/webp/4.webp'
